@@ -1,0 +1,9 @@
+../bottom/PE.sv 
+../middle/PE_array.sv 
+../middle/PE_array_output.sv 
+../bottom/coord_gen.sv 
+../bottom/conv_data_path.v 
+../bottom/skew_delay.sv
+../bottom/reLU.sv
+../top/top.sv 
+../top/top_tb.sv 
