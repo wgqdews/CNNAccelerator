@@ -14,7 +14,7 @@
 `define MAX_IMG_WIDTH  512
 `define IMG_ADDR_WIDTH $clog2(`MAX_IMG_WIDTH)
 
-`define img_W 8'd28
-`define img_H 8'd28
+`define img_W 17'd28
+`define img_H 17'd28
 `endif
 
