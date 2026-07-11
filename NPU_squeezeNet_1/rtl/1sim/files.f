@@ -1,7 +1,7 @@
 ../bottom/PE.sv 
 ../middle/PE_array.sv 
 ../middle/PE_array_output.sv 
-../bottom/coord_gen.sv 
+../bottom/coord_xy.sv 
 ../bottom/conv_data_path.v 
 ../bottom/skew_delay.sv
 ../bottom/reLU.sv
