@@ -50,9 +50,9 @@ module tb_top;
         $dumpfile("wave.vcd");
         $dumpvars(0, tb_top);
 
-        $readmemh("../input/conv_weights.txt", kernel);
-        $readmemh("../input/input.txt", i_data);
-        $readmemh("../input/conv_bias.txt", i_bias_mem);
+        $readmemh("../../input/conv_weights.txt", kernel);
+        $readmemh("../../input/input.txt", i_data);
+        $readmemh("../../input/conv_bias.txt", i_bias_mem);
 
         clk   = 0;
         rst_n = 0;
