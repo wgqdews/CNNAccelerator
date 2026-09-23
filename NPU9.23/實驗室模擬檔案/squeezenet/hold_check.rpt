@@ -1,0 +1,567 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : seq_chain_top
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 05:13:19 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TCCOM   Library: fsa0m_a_generic_core_tt1p8v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[17].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[17].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[17].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[17].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.27       0.27 r
+  u_conv/u_pe_array/gen_row[31].gen_col[17].u_pe/psum_out[0] (pe_14)
+                                                          0.00       0.27 r
+  u_conv/u_pe_array/psum_out_flat[544] (pe_array)         0.00       0.27 r
+  u_conv/u_post_process/psum_col_flat[544] (post_process_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[17].u_requant_lane/psum_col[0] (requant_lane_LANE17_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[17].u_requant_lane/U1814/O (XOR2HS)
+                                                          0.07       0.35 f
+  u_conv/u_post_process/lane[17].u_requant_lane/wdata_psum[0] (requant_lane_LANE17_NT_DEPTH126)
+                                                          0.00       0.35 f
+  u_conv/u_post_process/wdata_psum_flat[544] (post_process_NT_DEPTH126)
+                                                          0.00       0.35 f
+  u_conv/u_psum_sram/wdata_flat[544] (psum_sram_DEPTH12321)
+                                                          0.00       0.35 f
+  u_conv/u_psum_sram/bank[17].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.35 f
+  u_conv/u_psum_sram/bank[17].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.35 f
+  data arrival time                                                  0.35
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[17].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[30].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[30].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[30].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[30].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.28       0.28 r
+  u_conv/u_pe_array/gen_row[31].gen_col[30].u_pe/psum_out[0] (pe_1)
+                                                          0.00       0.28 r
+  u_conv/u_pe_array/psum_out_flat[960] (pe_array)         0.00       0.28 r
+  u_conv/u_post_process/psum_col_flat[960] (post_process_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[30].u_requant_lane/psum_col[0] (requant_lane_LANE30_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[30].u_requant_lane/U586/O (XNR2H)
+                                                          0.09       0.37 f
+  u_conv/u_post_process/lane[30].u_requant_lane/wdata_psum[0] (requant_lane_LANE30_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_post_process/wdata_psum_flat[960] (post_process_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/wdata_flat[960] (psum_sram_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[30].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[30].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[30].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.28       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[7].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[7].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[7].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[7].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.28       0.28 r
+  u_conv/u_pe_array/gen_row[31].gen_col[7].u_pe/psum_out[0] (pe_24)
+                                                          0.00       0.28 r
+  u_conv/u_pe_array/psum_out_flat[224] (pe_array)         0.00       0.28 r
+  u_conv/u_post_process/psum_col_flat[224] (post_process_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[7].u_requant_lane/psum_col[0] (requant_lane_LANE7_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[7].u_requant_lane/U510/O (XOR2H)
+                                                          0.09       0.37 f
+  u_conv/u_post_process/lane[7].u_requant_lane/wdata_psum[0] (requant_lane_LANE7_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_post_process/wdata_psum_flat[224] (post_process_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/wdata_flat[224] (psum_sram_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[7].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[7].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[7].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.28       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[28].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[28].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[28].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[28].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.28       0.28 r
+  u_conv/u_pe_array/gen_row[31].gen_col[28].u_pe/psum_out[0] (pe_3)
+                                                          0.00       0.28 r
+  u_conv/u_pe_array/psum_out_flat[896] (pe_array)         0.00       0.28 r
+  u_conv/u_post_process/psum_col_flat[896] (post_process_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[28].u_requant_lane/psum_col[0] (requant_lane_LANE28_NT_DEPTH126)
+                                                          0.00       0.28 r
+  u_conv/u_post_process/lane[28].u_requant_lane/U643/O (XNR2H)
+                                                          0.09       0.37 f
+  u_conv/u_post_process/lane[28].u_requant_lane/wdata_psum[0] (requant_lane_LANE28_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_post_process/wdata_psum_flat[896] (post_process_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/wdata_flat[896] (psum_sram_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[28].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[28].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[28].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.28       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[21].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[21].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[21].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[21].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.27       0.27 r
+  u_conv/u_pe_array/gen_row[31].gen_col[21].u_pe/psum_out[0] (pe_10)
+                                                          0.00       0.27 r
+  u_conv/u_pe_array/psum_out_flat[672] (pe_array)         0.00       0.27 r
+  u_conv/u_post_process/psum_col_flat[672] (post_process_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[21].u_requant_lane/psum_col[0] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1591/O (XOR2HS)
+                                                          0.10       0.37 f
+  u_conv/u_post_process/lane[21].u_requant_lane/wdata_psum[0] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_post_process/wdata_psum_flat[672] (post_process_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/wdata_flat[672] (psum_sram_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[21].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[19].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[19].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[19].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[19].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.27       0.27 r
+  u_conv/u_pe_array/gen_row[31].gen_col[19].u_pe/psum_out[0] (pe_12)
+                                                          0.00       0.27 r
+  u_conv/u_pe_array/psum_out_flat[608] (pe_array)         0.00       0.27 r
+  u_conv/u_post_process/psum_col_flat[608] (post_process_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[19].u_requant_lane/psum_col[0] (requant_lane_LANE19_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[19].u_requant_lane/U472/O (XOR2HS)
+                                                          0.11       0.37 f
+  u_conv/u_post_process/lane[19].u_requant_lane/wdata_psum[0] (requant_lane_LANE19_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_post_process/wdata_psum_flat[608] (post_process_NT_DEPTH126)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/wdata_flat[608] (psum_sram_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[19].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.37 f
+  u_conv/u_psum_sram/bank[19].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[19].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[29].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[29].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[29].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[29].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.27       0.27 r
+  u_conv/u_pe_array/gen_row[31].gen_col[29].u_pe/psum_out[0] (pe_2)
+                                                          0.00       0.27 r
+  u_conv/u_pe_array/psum_out_flat[928] (pe_array)         0.00       0.27 r
+  u_conv/u_post_process/psum_col_flat[928] (post_process_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[29].u_requant_lane/psum_col[0] (requant_lane_LANE29_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[29].u_requant_lane/U1586/O (XNR2HS)
+                                                          0.11       0.38 f
+  u_conv/u_post_process/lane[29].u_requant_lane/wdata_psum[0] (requant_lane_LANE29_NT_DEPTH126)
+                                                          0.00       0.38 f
+  u_conv/u_post_process/wdata_psum_flat[928] (post_process_NT_DEPTH126)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/wdata_flat[928] (psum_sram_DEPTH12321)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/bank[29].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/bank[29].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.38 f
+  data arrival time                                                  0.38
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[29].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[26].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[26].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[26].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[26].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.27       0.27 r
+  u_conv/u_pe_array/gen_row[31].gen_col[26].u_pe/psum_out[0] (pe_5)
+                                                          0.00       0.27 r
+  u_conv/u_pe_array/psum_out_flat[832] (pe_array)         0.00       0.27 r
+  u_conv/u_post_process/psum_col_flat[832] (post_process_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[26].u_requant_lane/psum_col[0] (requant_lane_LANE26_NT_DEPTH126)
+                                                          0.00       0.27 r
+  u_conv/u_post_process/lane[26].u_requant_lane/U1505/O (XNR2HS)
+                                                          0.11       0.38 f
+  u_conv/u_post_process/lane[26].u_requant_lane/wdata_psum[0] (requant_lane_LANE26_NT_DEPTH126)
+                                                          0.00       0.38 f
+  u_conv/u_post_process/wdata_psum_flat[832] (post_process_NT_DEPTH126)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/wdata_flat[832] (psum_sram_DEPTH12321)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/bank[26].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.38 f
+  u_conv/u_psum_sram/bank[26].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.38 f
+  data arrival time                                                  0.38
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[26].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[25].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[25].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[25].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[25].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.31       0.31 r
+  u_conv/u_pe_array/gen_row[31].gen_col[25].u_pe/psum_out[0] (pe_6)
+                                                          0.00       0.31 r
+  u_conv/u_pe_array/psum_out_flat[800] (pe_array)         0.00       0.31 r
+  u_conv/u_post_process/psum_col_flat[800] (post_process_NT_DEPTH126)
+                                                          0.00       0.31 r
+  u_conv/u_post_process/lane[25].u_requant_lane/psum_col[0] (requant_lane_LANE25_NT_DEPTH126)
+                                                          0.00       0.31 r
+  u_conv/u_post_process/lane[25].u_requant_lane/U685/O (XOR2HP)
+                                                          0.08       0.39 f
+  u_conv/u_post_process/lane[25].u_requant_lane/wdata_psum[0] (requant_lane_LANE25_NT_DEPTH126)
+                                                          0.00       0.39 f
+  u_conv/u_post_process/wdata_psum_flat[800] (post_process_NT_DEPTH126)
+                                                          0.00       0.39 f
+  u_conv/u_psum_sram/wdata_flat[800] (psum_sram_DEPTH12321)
+                                                          0.00       0.39 f
+  u_conv/u_psum_sram/bank[25].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.39 f
+  u_conv/u_psum_sram/bank[25].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[25].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.28       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: u_conv/u_pe_array/gen_row[31].gen_col[24].u_pe/psum_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_conv/u_psum_sram/bank[24].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_pe_array/gen_row[31].gen_col[24].u_pe/psum_out_reg[0]/CK (QDFFRBN)
+                                                          0.00 #     0.00 r
+  u_conv/u_pe_array/gen_row[31].gen_col[24].u_pe/psum_out_reg[0]/Q (QDFFRBN)
+                                                          0.29       0.29 r
+  u_conv/u_pe_array/gen_row[31].gen_col[24].u_pe/psum_out[0] (pe_7)
+                                                          0.00       0.29 r
+  u_conv/u_pe_array/psum_out_flat[768] (pe_array)         0.00       0.29 r
+  u_conv/u_post_process/psum_col_flat[768] (post_process_NT_DEPTH126)
+                                                          0.00       0.29 r
+  u_conv/u_post_process/lane[24].u_requant_lane/psum_col[0] (requant_lane_LANE24_NT_DEPTH126)
+                                                          0.00       0.29 r
+  u_conv/u_post_process/lane[24].u_requant_lane/U1471/O (XNR2HS)
+                                                          0.11       0.40 f
+  u_conv/u_post_process/lane[24].u_requant_lane/wdata_psum[0] (requant_lane_LANE24_NT_DEPTH126)
+                                                          0.00       0.40 f
+  u_conv/u_post_process/wdata_psum_flat[768] (post_process_NT_DEPTH126)
+                                                          0.00       0.40 f
+  u_conv/u_psum_sram/wdata_flat[768] (psum_sram_DEPTH12321)
+                                                          0.00       0.40 f
+  u_conv/u_psum_sram/bank[24].u_mem/wdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       0.40 f
+  u_conv/u_psum_sram/bank[24].u_mem/u_mem/DIB0 (PSUM180_12352X32)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_conv/u_psum_sram/bank[24].u_mem/u_mem/CKB (PSUM180_12352X32)
+                                                          0.00       0.10 r
+  library hold time                                       0.27       0.37
+  data required time                                                 0.37
+  --------------------------------------------------------------------------
+  data required time                                                 0.37
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

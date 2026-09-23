@@ -1,0 +1,2423 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : seq_chain_top
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 05:13:06 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: TCCOM   Library: fsa0m_a_generic_core_tt1p8v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_conv/u_psum_sram/bank[27].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufA[27].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE27_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[27].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[27].u_mem/u_mem/DOA1 (PSUM180_12352X32)
+                                                          2.99       2.99 r
+  u_conv/u_psum_sram/bank[27].u_mem/rdata[1] (psum_bank_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_psum_sram/rdata_flat[865] (psum_sram_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/psum_rdata_flat[865] (post_process_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[27].u_requant_lane/psum_rdata[1] (requant_lane_LANE27_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U266/O (INV8CK)
+                                                          0.04       3.02 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1183/O (NR2F)
+                                                          0.09       3.12 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U533/O (NR2T)
+                                                          0.07       3.19 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U532/O (MOAI1HP)
+                                                          0.12       3.31 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U506/O (OAI12HP)
+                                                          0.06       3.38 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U277/O (OAI12HP)
+                                                          0.07       3.44 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U276/O (ND2F)
+                                                          0.05       3.50 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U609/O (OAI12HT)
+                                                          0.07       3.57 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U452/O (OAI12HT)
+                                                          0.08       3.64 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U401/O (ND2F)
+                                                          0.06       3.71 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U631/O (OAI112HP)
+                                                          0.08       3.79 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U630/O (OAI12HT)
+                                                          0.07       3.86 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U270/O (AOI12HT)
+                                                          0.07       3.92 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U217/O (INV2)
+                                                          0.11       4.03 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U455/O (XNR2HP)
+                                                          0.11       4.14 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U313/O (OR2T)
+                                                          0.11       4.25 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1204/O (AOI22H)
+                                                          0.05       4.30 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1203/O (OA12P)
+                                                          0.18       4.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U448/O (MOAI1HP)
+                                                          0.12       4.60 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U424/O (ND2F)
+                                                          0.05       4.66 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U335/O (OAI12HP)
+                                                          0.12       4.78 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U322/O (INV4)
+                                                          0.03       4.81 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U281/O (MOAI1HP)
+                                                          0.10       4.91 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U280/O (OAI12HP)
+                                                          0.06       4.97 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U334/O (OAI12HP)
+                                                          0.07       5.05 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U491/O (AOI22HP)
+                                                          0.06       5.10 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1201/O (OA12P)
+                                                          0.20       5.30 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U316/O (MOAI1HP)
+                                                          0.13       5.42 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U395/O (ND2T)
+                                                          0.05       5.47 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U514/O (OAI12HP)
+                                                          0.07       5.54 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U391/O (ND2P)
+                                                          0.05       5.60 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U393/O (ND3HT)
+                                                          0.09       5.69 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U357/O (MOAI1HT)
+                                                          0.14       5.82 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U287/O (ND3HT)
+                                                          0.07       5.89 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U537/O (ND2F)
+                                                          0.07       5.97 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U135/O (INV3)
+                                                          0.04       6.01 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U415/O (MOAI1HP)
+                                                          0.10       6.11 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U505/O (ND2F)
+                                                          0.05       6.16 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U504/O (OAI12HT)
+                                                          0.06       6.22 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U495/O (AOI12HT)
+                                                          0.07       6.29 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U430/O (MOAI1HT)
+                                                          0.10       6.40 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U608/O (OA12P)
+                                                          0.17       6.56 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U535/O (NR2F)
+                                                          0.05       6.61 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1197/O (XNR2H)
+                                                          0.18       6.80 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1282/O (INV2)
+                                                          0.07       6.87 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1702/O (OAI12HP)
+                                                          0.23       7.09 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U78/O (INV8)
+                                                          0.08       7.17 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U70/CO (FA1S)
+                                                          0.32       7.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1686/S (FA1)
+                                                          0.40       7.88 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U61/CO (FA1S)
+                                                          0.30       8.18 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1531/S (FA1)
+                                                          0.40       8.58 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1569/S (FA1)
+                                                          0.44       9.02 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1643/O (OR2T)
+                                                          0.15       9.17 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U536/O (AOI12HT)
+                                                          0.09       9.26 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U284/O (OAI12HP)
+                                                          0.07       9.33 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U511/O (AOI12HT)
+                                                          0.10       9.43 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U463/O (MOAI1HT)
+                                                          0.05       9.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U546/O (AOI12HT)
+                                                          0.10       9.59 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U521/O (MOAI1HT)
+                                                          0.06       9.65 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U272/O (NR2F)
+                                                          0.08       9.72 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U271/O (MOAI1HP)
+                                                          0.06       9.78 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U554/O (AOI12HT)
+                                                          0.10       9.88 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U279/O (MOAI1HP)
+                                                          0.06       9.94 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U278/O (OAI12HP)
+                                                          0.07      10.00 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U517/O (OAI12HT)
+                                                          0.07      10.07 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U423/O (OAI12HT)
+                                                          0.06      10.13 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U614/O (OAI12HT)
+                                                          0.06      10.19 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U275/O (ND2F)
+                                                          0.07      10.26 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U274/O (OAI12HT)
+                                                          0.06      10.32 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U273/O (AOI12HT)
+                                                          0.10      10.42 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U317/O (MOAI1HP)
+                                                          0.06      10.48 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U359/O (OAI12HP)
+                                                          0.06      10.54 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U12/O (ND2T)
+                                                          0.04      10.58 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1796/CO (FA1)
+                                                          0.24      10.82 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1186/CO (FA1)
+                                                          0.24      11.06 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1200/O (AOI12H)
+                                                          0.13      11.19 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1199/O (OA12P)
+                                                          0.16      11.35 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U286/O (OAI12H)
+                                                          0.06      11.41 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U378/O (XNR2H)
+                                                          0.11      11.51 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U3810/O (AN3)
+                                                          0.19      11.70 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U542/O (ND3HT)
+                                                          0.07      11.77 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U559/O (OAI12HP)
+                                                          0.11      11.88 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U558/O (INV4)
+                                                          0.05      11.93 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1583/O (INV8CK)
+                                                          0.07      12.00 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U548/O (OAI12H)
+                                                          0.08      12.08 f
+  u_conv/u_post_process/lane[27].u_requant_lane/wdata_fmap[0] (requant_lane_LANE27_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/u_post_process/wdata_fmap_flat[216] (post_process_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/fmap_b_wdata_out_flat[216] (top_conv_layer)      0.00      12.08 f
+  U25054/O (ND2T)                                         0.06      12.14 r
+  U25372/O (ND3P)                                         0.07      12.21 f
+  bufA[27].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufA[27].u_mem/u_mem/DIB0 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufA[27].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[27].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufB[27].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE27_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[27].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[27].u_mem/u_mem/DOA1 (PSUM180_12352X32)
+                                                          2.99       2.99 r
+  u_conv/u_psum_sram/bank[27].u_mem/rdata[1] (psum_bank_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_psum_sram/rdata_flat[865] (psum_sram_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/psum_rdata_flat[865] (post_process_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[27].u_requant_lane/psum_rdata[1] (requant_lane_LANE27_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U266/O (INV8CK)
+                                                          0.04       3.02 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1183/O (NR2F)
+                                                          0.09       3.12 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U533/O (NR2T)
+                                                          0.07       3.19 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U532/O (MOAI1HP)
+                                                          0.12       3.31 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U506/O (OAI12HP)
+                                                          0.06       3.38 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U277/O (OAI12HP)
+                                                          0.07       3.44 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U276/O (ND2F)
+                                                          0.05       3.50 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U609/O (OAI12HT)
+                                                          0.07       3.57 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U452/O (OAI12HT)
+                                                          0.08       3.64 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U401/O (ND2F)
+                                                          0.06       3.71 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U631/O (OAI112HP)
+                                                          0.08       3.79 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U630/O (OAI12HT)
+                                                          0.07       3.86 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U270/O (AOI12HT)
+                                                          0.07       3.92 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U217/O (INV2)
+                                                          0.11       4.03 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U455/O (XNR2HP)
+                                                          0.11       4.14 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U313/O (OR2T)
+                                                          0.11       4.25 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1204/O (AOI22H)
+                                                          0.05       4.30 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1203/O (OA12P)
+                                                          0.18       4.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U448/O (MOAI1HP)
+                                                          0.12       4.60 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U424/O (ND2F)
+                                                          0.05       4.66 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U335/O (OAI12HP)
+                                                          0.12       4.78 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U322/O (INV4)
+                                                          0.03       4.81 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U281/O (MOAI1HP)
+                                                          0.10       4.91 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U280/O (OAI12HP)
+                                                          0.06       4.97 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U334/O (OAI12HP)
+                                                          0.07       5.05 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U491/O (AOI22HP)
+                                                          0.06       5.10 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1201/O (OA12P)
+                                                          0.20       5.30 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U316/O (MOAI1HP)
+                                                          0.13       5.42 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U395/O (ND2T)
+                                                          0.05       5.47 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U514/O (OAI12HP)
+                                                          0.07       5.54 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U391/O (ND2P)
+                                                          0.05       5.60 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U393/O (ND3HT)
+                                                          0.09       5.69 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U357/O (MOAI1HT)
+                                                          0.14       5.82 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U287/O (ND3HT)
+                                                          0.07       5.89 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U537/O (ND2F)
+                                                          0.07       5.97 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U135/O (INV3)
+                                                          0.04       6.01 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U415/O (MOAI1HP)
+                                                          0.10       6.11 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U505/O (ND2F)
+                                                          0.05       6.16 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U504/O (OAI12HT)
+                                                          0.06       6.22 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U495/O (AOI12HT)
+                                                          0.07       6.29 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U430/O (MOAI1HT)
+                                                          0.10       6.40 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U608/O (OA12P)
+                                                          0.17       6.56 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U535/O (NR2F)
+                                                          0.05       6.61 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1197/O (XNR2H)
+                                                          0.18       6.80 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1282/O (INV2)
+                                                          0.07       6.87 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1702/O (OAI12HP)
+                                                          0.23       7.09 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U78/O (INV8)
+                                                          0.08       7.17 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U70/CO (FA1S)
+                                                          0.32       7.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1686/S (FA1)
+                                                          0.40       7.88 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U61/CO (FA1S)
+                                                          0.30       8.18 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1531/S (FA1)
+                                                          0.40       8.58 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1569/S (FA1)
+                                                          0.44       9.02 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1643/O (OR2T)
+                                                          0.15       9.17 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U536/O (AOI12HT)
+                                                          0.09       9.26 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U284/O (OAI12HP)
+                                                          0.07       9.33 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U511/O (AOI12HT)
+                                                          0.10       9.43 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U463/O (MOAI1HT)
+                                                          0.05       9.49 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U546/O (AOI12HT)
+                                                          0.10       9.59 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U521/O (MOAI1HT)
+                                                          0.06       9.65 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U272/O (NR2F)
+                                                          0.08       9.72 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U271/O (MOAI1HP)
+                                                          0.06       9.78 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U554/O (AOI12HT)
+                                                          0.10       9.88 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U279/O (MOAI1HP)
+                                                          0.06       9.94 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U278/O (OAI12HP)
+                                                          0.07      10.00 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U517/O (OAI12HT)
+                                                          0.07      10.07 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U423/O (OAI12HT)
+                                                          0.06      10.13 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U614/O (OAI12HT)
+                                                          0.06      10.19 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U275/O (ND2F)
+                                                          0.07      10.26 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U274/O (OAI12HT)
+                                                          0.06      10.32 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U273/O (AOI12HT)
+                                                          0.10      10.42 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U317/O (MOAI1HP)
+                                                          0.06      10.48 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U359/O (OAI12HP)
+                                                          0.06      10.54 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U12/O (ND2T)
+                                                          0.04      10.58 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1796/CO (FA1)
+                                                          0.24      10.82 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1186/CO (FA1)
+                                                          0.24      11.06 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1200/O (AOI12H)
+                                                          0.13      11.19 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U1199/O (OA12P)
+                                                          0.16      11.35 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U286/O (OAI12H)
+                                                          0.06      11.41 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U378/O (XNR2H)
+                                                          0.11      11.51 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U3810/O (AN3)
+                                                          0.19      11.70 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U542/O (ND3HT)
+                                                          0.07      11.77 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U559/O (OAI12HP)
+                                                          0.11      11.88 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U558/O (INV4)
+                                                          0.05      11.93 f
+  u_conv/u_post_process/lane[27].u_requant_lane/U1583/O (INV8CK)
+                                                          0.07      12.00 r
+  u_conv/u_post_process/lane[27].u_requant_lane/U548/O (OAI12H)
+                                                          0.08      12.08 f
+  u_conv/u_post_process/lane[27].u_requant_lane/wdata_fmap[0] (requant_lane_LANE27_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/u_post_process/wdata_fmap_flat[216] (post_process_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/fmap_b_wdata_out_flat[216] (top_conv_layer)      0.00      12.08 f
+  U25054/O (ND2T)                                         0.06      12.14 r
+  U25372/O (ND3P)                                         0.07      12.21 f
+  bufB[27].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufB[27].u_mem/u_mem/DIB0 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufB[27].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[13].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufA[29].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE13_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[13].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[13].u_mem/u_mem/DOA0 (PSUM180_12352X32)
+                                                          2.98       2.98 r
+  u_conv/u_psum_sram/bank[13].u_mem/rdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       2.98 r
+  u_conv/u_psum_sram/rdata_flat[416] (psum_sram_DEPTH12321)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/psum_rdata_flat[416] (post_process_NT_DEPTH126)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/lane[13].u_requant_lane/psum_rdata[0] (requant_lane_LANE13_NT_DEPTH126)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U676/O (INV2)
+                                                          0.03       3.02 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U773/O (NR2P)
+                                                          0.09       3.11 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U314/O (XOR2H)
+                                                          0.11       3.21 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1737/C (HA1P)
+                                                          0.18       3.39 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U461/O (NR2T)
+                                                          0.06       3.45 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U460/O (MOAI1HP)
+                                                          0.11       3.57 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U402/O (OAI12HP)
+                                                          0.06       3.63 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U192/O (OAI12HP)
+                                                          0.07       3.70 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U277/O (OAI12HP)
+                                                          0.06       3.77 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U413/O (ND2F)
+                                                          0.07       3.84 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U187/O (OAI12HP)
+                                                          0.06       3.90 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U496/O (OAI12HT)
+                                                          0.07       3.97 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U550/O (AOI22HT)
+                                                          0.06       4.03 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U300/O (INV1S)
+                                                          0.09       4.12 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U178/O (XNR2HS)
+                                                          0.36       4.48 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1294/O (INV2)
+                                                          0.09       4.57 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U557/O (OAI12HT)
+                                                          0.21       4.78 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U158/O (INV6)
+                                                          0.07       4.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U149/S (FA1S)
+                                                          0.43       5.28 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U3390/S (FA1S)
+                                                          0.32       5.60 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U412/CO (FA1)
+                                                          0.26       5.86 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1659/CO (FA1)
+                                                          0.26       6.11 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U284/O (INV3CK)
+                                                          0.04       6.16 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U991/O (MOAI1)
+                                                          0.06       6.22 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1695/CO (FA1)
+                                                          0.23       6.45 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U717/O (INV2)
+                                                          0.08       6.53 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U980/O (MOAI1)
+                                                          0.07       6.60 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1661/CO (FA1)
+                                                          0.25       6.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1696/CO (FA1)
+                                                          0.22       7.07 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1743/CO (FA1)
+                                                          0.25       7.33 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U416/O (AOI22H)
+                                                          0.17       7.50 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U415/O (MOAI1HP)
+                                                          0.07       7.56 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U106/O (INV4)
+                                                          0.05       7.62 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U437/O (OAI22HP)
+                                                          0.06       7.68 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U285/O (INV4)
+                                                          0.05       7.73 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U697/O (MOAI1H)
+                                                          0.06       7.79 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U306/O (INV3)
+                                                          0.06       7.85 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U500/O (OAI22HP)
+                                                          0.06       7.92 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U351/O (INV4CK)
+                                                          0.05       7.97 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U426/O (MOAI1HP)
+                                                          0.06       8.03 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U414/O (AOI12HT)
+                                                          0.10       8.13 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U338/O (MOAI1HP)
+                                                          0.05       8.17 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1613/O (MAO222P)
+                                                          0.20       8.37 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U367/O (OAI12HP)
+                                                          0.06       8.43 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U280/O (OAI12HP)
+                                                          0.07       8.50 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U282/O (OAI12HP)
+                                                          0.06       8.56 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U350/O (OAI12HP)
+                                                          0.07       8.63 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U411/O (ND2F)
+                                                          0.06       8.69 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U422/O (OAI12HP)
+                                                          0.06       8.76 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U425/O (ND2F)
+                                                          0.06       8.81 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U499/O (OAI12HP)
+                                                          0.06       8.88 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U46/O (INV4)
+                                                          0.05       8.93 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U240/O (MOAI1HP)
+                                                          0.05       8.98 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U253/O (INV4)
+                                                          0.06       9.04 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U252/O (OAI22HT)
+                                                          0.06       9.09 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U288/O (AOI22HT)
+                                                          0.11       9.21 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U455/O (NR2F)
+                                                          0.05       9.26 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1213/O (NR2F)
+                                                          0.08       9.34 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U321/O (MOAI1HT)
+                                                          0.05       9.39 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U295/O (MAOI1HT)
+                                                          0.11       9.50 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U482/O (MOAI1HT)
+                                                          0.06       9.56 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U487/O (AOI12HT)
+                                                          0.11       9.67 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U458/O (MOAI1HT)
+                                                          0.05       9.72 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U263/O (OAI12HP)
+                                                          0.06       9.78 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U264/O (OAI12HP)
+                                                          0.07       9.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1201/O (ND3HT)
+                                                          0.08       9.93 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U246/O (ND3HT)
+                                                          0.06       9.99 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U245/O (OAI12HP)
+                                                          0.07      10.06 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1200/O (MOAI1HT)
+                                                          0.05      10.12 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U443/O (OAI12HP)
+                                                          0.06      10.18 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U257/O (OAI12HP)
+                                                          0.07      10.25 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U256/O (OAI12HP)
+                                                          0.07      10.31 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1199/O (OAI12HT)
+                                                          0.07      10.39 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1198/O (AOI12HT)
+                                                          0.11      10.49 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1197/O (MOAI1HT)
+                                                          0.05      10.55 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U265/O (OAI12HP)
+                                                          0.06      10.61 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U266/O (OAI12HP)
+                                                          0.07      10.68 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1571/O (ND2F)
+                                                          0.06      10.74 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U262/O (OAI12HP)
+                                                          0.07      10.81 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1211/O (ND2F)
+                                                          0.07      10.88 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U465/O (ND3HT)
+                                                          0.07      10.95 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U423/O (OAI112HT)
+                                                          0.08      11.03 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U431/O (NR2F)
+                                                          0.05      11.07 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U464/O (NR2F)
+                                                          0.08      11.16 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1534/O (MOAI1HP)
+                                                          0.07      11.22 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1577/O (AO12T)
+                                                          0.20      11.42 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U276/O (XOR2HP)
+                                                          0.10      11.52 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U456/O (NR2F)
+                                                          0.08      11.60 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U251/O (ND3HT)
+                                                          0.06      11.65 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U250/O (INV3CK)
+                                                          0.05      11.70 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U249/O (ND3HT)
+                                                          0.06      11.76 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1207/O (ND2F)
+                                                          0.11      11.88 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1202/O (OAI12H)
+                                                          0.08      11.96 f
+  u_conv/u_post_process/lane[13].u_requant_lane/wdata_fmap[0] (requant_lane_LANE13_NT_DEPTH126)
+                                                          0.00      11.96 f
+  u_conv/u_post_process/wdata_fmap_flat[104] (post_process_NT_DEPTH126)
+                                                          0.00      11.96 f
+  u_conv/fmap_b_wdata_out_flat[104] (top_conv_layer)      0.00      11.96 f
+  U24779/O (ND2)                                          0.08      12.03 r
+  U25194/O (INV1)                                         0.05      12.08 f
+  U25044/O (NR2T)                                         0.06      12.15 r
+  U25067/O (OAI12H)                                       0.07      12.21 f
+  bufA[29].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufA[29].u_mem/u_mem/DIB0 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufA[29].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[13].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufB[29].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE13_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[13].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[13].u_mem/u_mem/DOA0 (PSUM180_12352X32)
+                                                          2.98       2.98 r
+  u_conv/u_psum_sram/bank[13].u_mem/rdata[0] (psum_bank_DEPTH12321)
+                                                          0.00       2.98 r
+  u_conv/u_psum_sram/rdata_flat[416] (psum_sram_DEPTH12321)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/psum_rdata_flat[416] (post_process_NT_DEPTH126)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/lane[13].u_requant_lane/psum_rdata[0] (requant_lane_LANE13_NT_DEPTH126)
+                                                          0.00       2.98 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U676/O (INV2)
+                                                          0.03       3.02 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U773/O (NR2P)
+                                                          0.09       3.11 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U314/O (XOR2H)
+                                                          0.11       3.21 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1737/C (HA1P)
+                                                          0.18       3.39 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U461/O (NR2T)
+                                                          0.06       3.45 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U460/O (MOAI1HP)
+                                                          0.11       3.57 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U402/O (OAI12HP)
+                                                          0.06       3.63 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U192/O (OAI12HP)
+                                                          0.07       3.70 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U277/O (OAI12HP)
+                                                          0.06       3.77 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U413/O (ND2F)
+                                                          0.07       3.84 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U187/O (OAI12HP)
+                                                          0.06       3.90 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U496/O (OAI12HT)
+                                                          0.07       3.97 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U550/O (AOI22HT)
+                                                          0.06       4.03 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U300/O (INV1S)
+                                                          0.09       4.12 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U178/O (XNR2HS)
+                                                          0.36       4.48 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1294/O (INV2)
+                                                          0.09       4.57 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U557/O (OAI12HT)
+                                                          0.21       4.78 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U158/O (INV6)
+                                                          0.07       4.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U149/S (FA1S)
+                                                          0.43       5.28 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U3390/S (FA1S)
+                                                          0.32       5.60 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U412/CO (FA1)
+                                                          0.26       5.86 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1659/CO (FA1)
+                                                          0.26       6.11 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U284/O (INV3CK)
+                                                          0.04       6.16 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U991/O (MOAI1)
+                                                          0.06       6.22 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1695/CO (FA1)
+                                                          0.23       6.45 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U717/O (INV2)
+                                                          0.08       6.53 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U980/O (MOAI1)
+                                                          0.07       6.60 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1661/CO (FA1)
+                                                          0.25       6.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1696/CO (FA1)
+                                                          0.22       7.07 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1743/CO (FA1)
+                                                          0.25       7.33 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U416/O (AOI22H)
+                                                          0.17       7.50 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U415/O (MOAI1HP)
+                                                          0.07       7.56 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U106/O (INV4)
+                                                          0.05       7.62 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U437/O (OAI22HP)
+                                                          0.06       7.68 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U285/O (INV4)
+                                                          0.05       7.73 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U697/O (MOAI1H)
+                                                          0.06       7.79 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U306/O (INV3)
+                                                          0.06       7.85 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U500/O (OAI22HP)
+                                                          0.06       7.92 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U351/O (INV4CK)
+                                                          0.05       7.97 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U426/O (MOAI1HP)
+                                                          0.06       8.03 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U414/O (AOI12HT)
+                                                          0.10       8.13 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U338/O (MOAI1HP)
+                                                          0.05       8.17 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1613/O (MAO222P)
+                                                          0.20       8.37 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U367/O (OAI12HP)
+                                                          0.06       8.43 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U280/O (OAI12HP)
+                                                          0.07       8.50 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U282/O (OAI12HP)
+                                                          0.06       8.56 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U350/O (OAI12HP)
+                                                          0.07       8.63 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U411/O (ND2F)
+                                                          0.06       8.69 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U422/O (OAI12HP)
+                                                          0.06       8.76 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U425/O (ND2F)
+                                                          0.06       8.81 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U499/O (OAI12HP)
+                                                          0.06       8.88 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U46/O (INV4)
+                                                          0.05       8.93 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U240/O (MOAI1HP)
+                                                          0.05       8.98 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U253/O (INV4)
+                                                          0.06       9.04 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U252/O (OAI22HT)
+                                                          0.06       9.09 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U288/O (AOI22HT)
+                                                          0.11       9.21 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U455/O (NR2F)
+                                                          0.05       9.26 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1213/O (NR2F)
+                                                          0.08       9.34 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U321/O (MOAI1HT)
+                                                          0.05       9.39 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U295/O (MAOI1HT)
+                                                          0.11       9.50 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U482/O (MOAI1HT)
+                                                          0.06       9.56 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U487/O (AOI12HT)
+                                                          0.11       9.67 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U458/O (MOAI1HT)
+                                                          0.05       9.72 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U263/O (OAI12HP)
+                                                          0.06       9.78 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U264/O (OAI12HP)
+                                                          0.07       9.85 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1201/O (ND3HT)
+                                                          0.08       9.93 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U246/O (ND3HT)
+                                                          0.06       9.99 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U245/O (OAI12HP)
+                                                          0.07      10.06 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1200/O (MOAI1HT)
+                                                          0.05      10.12 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U443/O (OAI12HP)
+                                                          0.06      10.18 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U257/O (OAI12HP)
+                                                          0.07      10.25 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U256/O (OAI12HP)
+                                                          0.07      10.31 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1199/O (OAI12HT)
+                                                          0.07      10.39 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1198/O (AOI12HT)
+                                                          0.11      10.49 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1197/O (MOAI1HT)
+                                                          0.05      10.55 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U265/O (OAI12HP)
+                                                          0.06      10.61 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U266/O (OAI12HP)
+                                                          0.07      10.68 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1571/O (ND2F)
+                                                          0.06      10.74 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U262/O (OAI12HP)
+                                                          0.07      10.81 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1211/O (ND2F)
+                                                          0.07      10.88 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U465/O (ND3HT)
+                                                          0.07      10.95 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U423/O (OAI112HT)
+                                                          0.08      11.03 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U431/O (NR2F)
+                                                          0.05      11.07 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U464/O (NR2F)
+                                                          0.08      11.16 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1534/O (MOAI1HP)
+                                                          0.07      11.22 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1577/O (AO12T)
+                                                          0.20      11.42 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U276/O (XOR2HP)
+                                                          0.10      11.52 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U456/O (NR2F)
+                                                          0.08      11.60 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U251/O (ND3HT)
+                                                          0.06      11.65 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U250/O (INV3CK)
+                                                          0.05      11.70 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U249/O (ND3HT)
+                                                          0.06      11.76 f
+  u_conv/u_post_process/lane[13].u_requant_lane/U1207/O (ND2F)
+                                                          0.11      11.88 r
+  u_conv/u_post_process/lane[13].u_requant_lane/U1202/O (OAI12H)
+                                                          0.08      11.96 f
+  u_conv/u_post_process/lane[13].u_requant_lane/wdata_fmap[0] (requant_lane_LANE13_NT_DEPTH126)
+                                                          0.00      11.96 f
+  u_conv/u_post_process/wdata_fmap_flat[104] (post_process_NT_DEPTH126)
+                                                          0.00      11.96 f
+  u_conv/fmap_b_wdata_out_flat[104] (top_conv_layer)      0.00      11.96 f
+  U24779/O (ND2)                                          0.08      12.03 r
+  U25194/O (INV1)                                         0.05      12.08 f
+  U25044/O (NR2T)                                         0.06      12.15 r
+  U25067/O (OAI12H)                                       0.07      12.21 f
+  bufB[29].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufB[29].u_mem/u_mem/DIB0 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufB[29].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[10].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufA[26].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE10_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[10].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[10].u_mem/u_mem/DOA2 (PSUM180_12352X32)
+                                                          2.99       2.99 r
+  u_conv/u_psum_sram/bank[10].u_mem/rdata[2] (psum_bank_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_psum_sram/rdata_flat[322] (psum_sram_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/psum_rdata_flat[322] (post_process_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/psum_rdata[2] (requant_lane_LANE10_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U347/O (INV8)
+                                                          0.03       3.02 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U480/O (NR2F)
+                                                          0.10       3.12 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U396/O (INV3)
+                                                          0.05       3.16 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U352/O (OAI12HT)
+                                                          0.12       3.28 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U285/O (OAI12HT)
+                                                          0.06       3.35 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U511/O (OAI12HT)
+                                                          0.07       3.41 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U301/O (MAOI1HT)
+                                                          0.07       3.48 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U447/O (OAI12HT)
+                                                          0.11       3.59 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U463/O (INV6CK)
+                                                          0.05       3.64 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U505/O (MOAI1HT)
+                                                          0.10       3.74 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U356/O (OAI12HT)
+                                                          0.06       3.80 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U510/O (OAI12HT)
+                                                          0.06       3.86 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U493/O (OAI12HT)
+                                                          0.06       3.93 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U579/O (OAI12HT)
+                                                          0.06       3.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U580/O (ND2F)
+                                                          0.04       4.03 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U222/O (OAI12HP)
+                                                          0.06       4.10 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U398/O (ND2F)
+                                                          0.05       4.14 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U570/O (ND2F)
+                                                          0.08       4.22 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U330/O (MAOI1HT)
+                                                          0.06       4.28 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U326/O (OAI12HT)
+                                                          0.11       4.39 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U209/O (INV6)
+                                                          0.04       4.43 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U314/O (MOAI1HT)
+                                                          0.08       4.51 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U271/O (OAI12HP)
+                                                          0.07       4.58 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U377/O (OAI12HT)
+                                                          0.06       4.64 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U378/O (INV6CK)
+                                                          0.05       4.69 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U365/O (MOAI1HT)
+                                                          0.10       4.79 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U588/O (ND2F)
+                                                          0.05       4.84 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U587/O (OAI12HT)
+                                                          0.06       4.90 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U397/O (XNR2HS)
+                                                          0.20       5.10 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U935/O (XOR2HS)
+                                                          0.13       5.23 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U158/O (XNR2HS)
+                                                          0.21       5.45 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U156/O (INV6CK)
+                                                          0.18       5.62 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U119/O (INV3)
+                                                          0.22       5.85 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1207/O (MOAI1)
+                                                          0.18       6.02 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U2389/O (NR2)
+                                                          0.09       6.12 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U467/O (BUF8CK)
+                                                          0.17       6.28 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U514/O (MOAI1)
+                                                          0.16       6.45 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U3004/S (FA1S)
+                                                          0.42       6.87 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U3028/S (FA1S)
+                                                          0.33       7.20 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U296/CO (FA1)
+                                                          0.23       7.43 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U3049/S (FA1S)
+                                                          0.45       7.89 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U93/O (XNR2HS)
+                                                          0.24       8.13 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U91/O (NR2P)
+                                                          0.12       8.25 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U316/O (MOAI1HT)
+                                                          0.11       8.36 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U82/O (OAI12HP)
+                                                          0.06       8.42 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U293/O (OAI12HP)
+                                                          0.08       8.50 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U278/O (ND2F)
+                                                          0.04       8.54 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1488/O (OAI12HP)
+                                                          0.06       8.60 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U500/O (INV4)
+                                                          0.04       8.64 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U357/O (MOAI1HT)
+                                                          0.09       8.73 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U304/O (OAI12HP)
+                                                          0.07       8.79 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U329/O (OAI12HT)
+                                                          0.06       8.86 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U315/O (INV6)
+                                                          0.03       8.89 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U320/O (MOAI1HT)
+                                                          0.09       8.98 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U306/O (INV6)
+                                                          0.03       9.01 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U462/O (MOAI1HT)
+                                                          0.08       9.09 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U437/O (INV3)
+                                                          0.05       9.14 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U475/O (MOAI1HT)
+                                                          0.09       9.22 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U482/O (ND2F)
+                                                          0.05       9.27 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U455/O (OAI12HT)
+                                                          0.06       9.33 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1081/O (AOI12HT)
+                                                          0.06       9.39 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U454/O (MOAI1HT)
+                                                          0.10       9.49 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U376/O (OAI12HT)
+                                                          0.06       9.55 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U519/O (OAI12HT)
+                                                          0.05       9.61 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U560/O (AOI22HT)
+                                                          0.06       9.66 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U427/O (MOAI1HT)
+                                                          0.10       9.77 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U446/O (AOI12HT)
+                                                          0.06       9.83 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U483/O (MOAI1HT)
+                                                          0.09       9.92 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U518/O (ND3HT)
+                                                          0.07       9.99 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U386/O (ND2F)
+                                                          0.08      10.07 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U311/O (OAI12HT)
+                                                          0.06      10.13 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U481/O (OAI12HT)
+                                                          0.06      10.19 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1074/O (ND2F)
+                                                          0.04      10.23 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1084/O (OAI12HP)
+                                                          0.06      10.29 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U520/O (ND2F)
+                                                          0.04      10.33 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1449/O (ND2F)
+                                                          0.07      10.40 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U499/O (AOI12HT)
+                                                          0.05      10.45 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1070/O (OA12P)
+                                                          0.17      10.62 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U355/O (MOAI1HP)
+                                                          0.13      10.75 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U287/O (MAOI1HT)
+                                                          0.05      10.80 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U382/O (MOAI1H)
+                                                          0.09      10.89 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1534/CO (FA1)
+                                                          0.24      11.13 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U297/O (BUF4CK)
+                                                          0.13      11.26 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U379/O (AOI12HT)
+                                                          0.06      11.32 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1479/O (OA12P)
+                                                          0.16      11.47 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U302/O (XOR2H)
+                                                          0.10      11.57 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U456/O (NR2P)
+                                                          0.11      11.68 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U448/O (ND3HT)
+                                                          0.07      11.75 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U279/O (INV4CK)
+                                                          0.06      11.81 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U555/O (AOI13HT)
+                                                          0.08      11.89 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U554/O (INV12)
+                                                          0.09      11.98 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U269/O (OAI12H)
+                                                          0.09      12.07 f
+  u_conv/u_post_process/lane[10].u_requant_lane/wdata_fmap[7] (requant_lane_LANE10_NT_DEPTH126)
+                                                          0.00      12.07 f
+  u_conv/u_post_process/wdata_fmap_flat[87] (post_process_NT_DEPTH126)
+                                                          0.00      12.07 f
+  u_conv/fmap_b_wdata_out_flat[87] (top_conv_layer)       0.00      12.07 f
+  U25351/O (ND2P)                                         0.08      12.15 r
+  U25138/O (ND3HT)                                        0.06      12.21 f
+  bufA[26].u_mem/wdata[7] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufA[26].u_mem/u_mem/DIB7 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufA[26].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[10].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufB[26].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE10_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[10].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[10].u_mem/u_mem/DOA2 (PSUM180_12352X32)
+                                                          2.99       2.99 r
+  u_conv/u_psum_sram/bank[10].u_mem/rdata[2] (psum_bank_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_psum_sram/rdata_flat[322] (psum_sram_DEPTH12321)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/psum_rdata_flat[322] (post_process_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/psum_rdata[2] (requant_lane_LANE10_NT_DEPTH126)
+                                                          0.00       2.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U347/O (INV8)
+                                                          0.03       3.02 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U480/O (NR2F)
+                                                          0.10       3.12 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U396/O (INV3)
+                                                          0.05       3.16 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U352/O (OAI12HT)
+                                                          0.12       3.28 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U285/O (OAI12HT)
+                                                          0.06       3.35 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U511/O (OAI12HT)
+                                                          0.07       3.41 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U301/O (MAOI1HT)
+                                                          0.07       3.48 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U447/O (OAI12HT)
+                                                          0.11       3.59 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U463/O (INV6CK)
+                                                          0.05       3.64 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U505/O (MOAI1HT)
+                                                          0.10       3.74 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U356/O (OAI12HT)
+                                                          0.06       3.80 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U510/O (OAI12HT)
+                                                          0.06       3.86 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U493/O (OAI12HT)
+                                                          0.06       3.93 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U579/O (OAI12HT)
+                                                          0.06       3.99 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U580/O (ND2F)
+                                                          0.04       4.03 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U222/O (OAI12HP)
+                                                          0.06       4.10 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U398/O (ND2F)
+                                                          0.05       4.14 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U570/O (ND2F)
+                                                          0.08       4.22 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U330/O (MAOI1HT)
+                                                          0.06       4.28 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U326/O (OAI12HT)
+                                                          0.11       4.39 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U209/O (INV6)
+                                                          0.04       4.43 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U314/O (MOAI1HT)
+                                                          0.08       4.51 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U271/O (OAI12HP)
+                                                          0.07       4.58 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U377/O (OAI12HT)
+                                                          0.06       4.64 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U378/O (INV6CK)
+                                                          0.05       4.69 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U365/O (MOAI1HT)
+                                                          0.10       4.79 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U588/O (ND2F)
+                                                          0.05       4.84 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U587/O (OAI12HT)
+                                                          0.06       4.90 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U397/O (XNR2HS)
+                                                          0.20       5.10 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U935/O (XOR2HS)
+                                                          0.13       5.23 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U158/O (XNR2HS)
+                                                          0.21       5.45 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U156/O (INV6CK)
+                                                          0.18       5.62 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U119/O (INV3)
+                                                          0.22       5.85 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1207/O (MOAI1)
+                                                          0.18       6.02 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U2389/O (NR2)
+                                                          0.09       6.12 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U467/O (BUF8CK)
+                                                          0.17       6.28 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U514/O (MOAI1)
+                                                          0.16       6.45 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U3004/S (FA1S)
+                                                          0.42       6.87 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U3028/S (FA1S)
+                                                          0.33       7.20 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U296/CO (FA1)
+                                                          0.23       7.43 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U3049/S (FA1S)
+                                                          0.45       7.89 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U93/O (XNR2HS)
+                                                          0.24       8.13 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U91/O (NR2P)
+                                                          0.12       8.25 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U316/O (MOAI1HT)
+                                                          0.11       8.36 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U82/O (OAI12HP)
+                                                          0.06       8.42 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U293/O (OAI12HP)
+                                                          0.08       8.50 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U278/O (ND2F)
+                                                          0.04       8.54 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1488/O (OAI12HP)
+                                                          0.06       8.60 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U500/O (INV4)
+                                                          0.04       8.64 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U357/O (MOAI1HT)
+                                                          0.09       8.73 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U304/O (OAI12HP)
+                                                          0.07       8.79 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U329/O (OAI12HT)
+                                                          0.06       8.86 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U315/O (INV6)
+                                                          0.03       8.89 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U320/O (MOAI1HT)
+                                                          0.09       8.98 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U306/O (INV6)
+                                                          0.03       9.01 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U462/O (MOAI1HT)
+                                                          0.08       9.09 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U437/O (INV3)
+                                                          0.05       9.14 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U475/O (MOAI1HT)
+                                                          0.09       9.22 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U482/O (ND2F)
+                                                          0.05       9.27 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U455/O (OAI12HT)
+                                                          0.06       9.33 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1081/O (AOI12HT)
+                                                          0.06       9.39 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U454/O (MOAI1HT)
+                                                          0.10       9.49 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U376/O (OAI12HT)
+                                                          0.06       9.55 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U519/O (OAI12HT)
+                                                          0.05       9.61 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U560/O (AOI22HT)
+                                                          0.06       9.66 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U427/O (MOAI1HT)
+                                                          0.10       9.77 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U446/O (AOI12HT)
+                                                          0.06       9.83 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U483/O (MOAI1HT)
+                                                          0.09       9.92 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U518/O (ND3HT)
+                                                          0.07       9.99 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U386/O (ND2F)
+                                                          0.08      10.07 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U311/O (OAI12HT)
+                                                          0.06      10.13 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U481/O (OAI12HT)
+                                                          0.06      10.19 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1074/O (ND2F)
+                                                          0.04      10.23 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1084/O (OAI12HP)
+                                                          0.06      10.29 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U520/O (ND2F)
+                                                          0.04      10.33 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1449/O (ND2F)
+                                                          0.07      10.40 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U499/O (AOI12HT)
+                                                          0.05      10.45 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1070/O (OA12P)
+                                                          0.17      10.62 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U355/O (MOAI1HP)
+                                                          0.13      10.75 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U287/O (MAOI1HT)
+                                                          0.05      10.80 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U382/O (MOAI1H)
+                                                          0.09      10.89 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U1534/CO (FA1)
+                                                          0.24      11.13 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U297/O (BUF4CK)
+                                                          0.13      11.26 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U379/O (AOI12HT)
+                                                          0.06      11.32 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U1479/O (OA12P)
+                                                          0.16      11.47 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U302/O (XOR2H)
+                                                          0.10      11.57 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U456/O (NR2P)
+                                                          0.11      11.68 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U448/O (ND3HT)
+                                                          0.07      11.75 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U279/O (INV4CK)
+                                                          0.06      11.81 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U555/O (AOI13HT)
+                                                          0.08      11.89 f
+  u_conv/u_post_process/lane[10].u_requant_lane/U554/O (INV12)
+                                                          0.09      11.98 r
+  u_conv/u_post_process/lane[10].u_requant_lane/U269/O (OAI12H)
+                                                          0.09      12.07 f
+  u_conv/u_post_process/lane[10].u_requant_lane/wdata_fmap[7] (requant_lane_LANE10_NT_DEPTH126)
+                                                          0.00      12.07 f
+  u_conv/u_post_process/wdata_fmap_flat[87] (post_process_NT_DEPTH126)
+                                                          0.00      12.07 f
+  u_conv/fmap_b_wdata_out_flat[87] (top_conv_layer)       0.00      12.07 f
+  U25351/O (ND2P)                                         0.08      12.15 r
+  U25138/O (ND3HT)                                        0.06      12.21 f
+  bufB[26].u_mem/wdata[7] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufB[26].u_mem/u_mem/DIB7 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufB[26].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_fsm/n_tile_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufA[4].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  post_process_NT_DEPTH126
+                     enG500K               fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE4_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_fsm/n_tile_reg[0]/CK (QDFFRBP)                 0.00 #     0.00 r
+  u_conv/u_fsm/n_tile_reg[0]/Q (QDFFRBP)                  0.30       0.30 f
+  u_conv/u_fsm/n_tile[0] (conv_ctrl_fsm)                  0.00       0.30 f
+  u_conv/u_post_process/n_tile[0] (post_process_NT_DEPTH126)
+                                                          0.00       0.30 f
+  u_conv/u_post_process/U96/O (BUF12CK)                   0.15       0.45 f
+  u_conv/u_post_process/U117/O (BUF6)                     0.17       0.62 f
+  u_conv/u_post_process/lane[4].u_requant_lane/n_tile[0] (requant_lane_LANE4_NT_DEPTH126)
+                                                          0.00       0.62 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1559/O (INV2)
+                                                          0.08       0.70 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1168/O (NR2P)
+                                                          0.07       0.77 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1166/O (OAI12HS)
+                                                          0.09       0.86 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U438/O (OAI12H)
+                                                          0.07       0.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U589/CO (FA1)
+                                                          0.25       1.18 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1152/O (INV2)
+                                                          0.07       1.25 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1711/O (MOAI1H)
+                                                          0.07       1.32 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U437/O (ND2T)
+                                                          0.07       1.39 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U436/O (OAI12H)
+                                                          0.06       1.45 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1783/CO (FA1)
+                                                          0.26       1.71 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U522/O (XNR2HP)
+                                                          0.13       1.83 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1652/O (NR2T)
+                                                          0.16       1.99 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1328/O (INV2)
+                                                          0.05       2.04 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1972/O (OR2)
+                                                          0.26       2.30 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1973/O (OR2)
+                                                          0.26       2.56 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U2006/O (AN4B1S)
+                                                          0.22       2.78 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1083/O (AN2)
+                                                          0.15       2.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U571/O (ND3)
+                                                          0.10       3.03 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U177/O (INV1S)
+                                                          0.08       3.11 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U567/O (ND3)
+                                                          0.11       3.22 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1776/C (HA1P)
+                                                          0.15       3.37 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1055/O (NR2P)
+                                                          0.06       3.43 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1043/O (MOAI1H)
+                                                          0.16       3.59 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U385/O (OAI12HP)
+                                                          0.07       3.66 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U171/O (OAI12HP)
+                                                          0.08       3.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U364/O (AOI12HT)
+                                                          0.07       3.80 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U386/O (MOAI1HT)
+                                                          0.11       3.91 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U388/O (AOI12HT)
+                                                          0.06       3.97 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U423/O (MOAI1HT)
+                                                          0.10       4.07 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U381/O (AOI12HT)
+                                                          0.07       4.14 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U384/O (MOAI1HT)
+                                                          0.10       4.24 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U297/O (MAOI1HT)
+                                                          0.06       4.31 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U389/O (MOAI1HT)
+                                                          0.11       4.41 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U361/O (INV4)
+                                                          0.03       4.45 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U241/O (MOAI1HP)
+                                                          0.10       4.54 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U240/O (OAI12HP)
+                                                          0.07       4.61 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U318/O (OAI12HT)
+                                                          0.07       4.69 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U392/O (ND2F)
+                                                          0.05       4.74 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U382/O (OAI12HT)
+                                                          0.06       4.80 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U433/O (AOI12HT)
+                                                          0.08       4.87 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U226/O (MOAI1HT)
+                                                          0.11       4.98 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U225/O (ND3HT)
+                                                          0.07       5.05 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U497/O (OAI12HP)
+                                                          0.06       5.12 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U499/O (ND2F)
+                                                          0.04       5.16 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U256/O (OAI112HP)
+                                                          0.07       5.23 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U354/O (OAI12HP)
+                                                          0.08       5.30 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U284/O (OAI12HT)
+                                                          0.07       5.38 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U332/O (ND3HT)
+                                                          0.07       5.44 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U331/O (ND2T)
+                                                          0.08       5.52 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U300/O (INV4CK)
+                                                          0.04       5.57 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U108/O (OAI22HP)
+                                                          0.10       5.67 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U353/O (INV4)
+                                                          0.04       5.71 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U255/O (MOAI1HP)
+                                                          0.11       5.82 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U533/O (AOI12HP)
+                                                          0.08       5.90 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U894/O (MOAI1HP)
+                                                          0.12       6.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U319/O (AOI22HP)
+                                                          0.06       6.07 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1196/O (OA12P)
+                                                          0.20       6.26 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U254/O (MOAI1HP)
+                                                          0.11       6.37 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1211/O (OAI12H)
+                                                          0.07       6.44 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1210/O (OAI12H)
+                                                          0.07       6.51 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U78/CO (FA1)
+                                                          0.22       6.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1212/O (XNR2HP)
+                                                          0.16       6.88 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U292/O (INV12)
+                                                          0.07       6.95 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U431/O (ND2F)
+                                                          0.11       7.06 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U430/O (INV8)
+                                                          0.07       7.13 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U60/O (INV2)
+                                                          0.06       7.20 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U54/O (ND2P)
+                                                          0.05       7.25 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U302/O (ND2T)
+                                                          0.05       7.30 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U303/O (OAI12H)
+                                                          0.06       7.36 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1766/S (FA1)
+                                                          0.18       7.54 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U40/CO (FA1S)
+                                                          0.30       7.83 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U448/S (FA1)
+                                                          0.40       8.23 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1610/S (FA1)
+                                                          0.41       8.65 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1205/O (INV1S)
+                                                          0.15       8.80 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U227/O (OAI12HP)
+                                                          0.16       8.96 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U426/O (AOI22HT)
+                                                          0.06       9.01 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U233/O (MOAI1HP)
+                                                          0.13       9.14 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U232/O (AOI12HT)
+                                                          0.06       9.21 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U310/O (MOAI1HP)
+                                                          0.12       9.33 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U249/O (ND3HT)
+                                                          0.06       9.39 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1194/O (ND3HT)
+                                                          0.09       9.48 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U501/O (ND3HT)
+                                                          0.07       9.55 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U434/O (OAI112HP)
+                                                          0.17       9.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U371/O (AOI12HT)
+                                                          0.07       9.79 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U413/O (MOAI1HP)
+                                                          0.11       9.90 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U245/O (AOI22HP)
+                                                          0.06       9.96 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U244/O (MOAI1HP)
+                                                          0.12      10.08 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U411/O (AOI22HT)
+                                                          0.06      10.14 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U406/O (MOAI1HT)
+                                                          0.13      10.27 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U425/O (AOI12HT)
+                                                          0.07      10.34 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U420/O (MOAI1HT)
+                                                          0.11      10.45 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U365/O (OAI12HT)
+                                                          0.06      10.51 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U409/O (OAI12HT)
+                                                          0.08      10.59 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U496/O (ND2F)
+                                                          0.04      10.63 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U243/O (ND3HT)
+                                                          0.08      10.71 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U242/O (AOI12HP)
+                                                          0.07      10.78 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1188/O (MOAI1HP)
+                                                          0.11      10.89 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U237/O (ND2F)
+                                                          0.05      10.95 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U216/O (OAI12HT)
+                                                          0.06      11.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U379/O (ND2F)
+                                                          0.04      11.05 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U363/O (ND3HT)
+                                                          0.07      11.12 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1216/CO (FA1)
+                                                          0.21      11.33 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1192/O (AOI22HP)
+                                                          0.07      11.40 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U287/O (MOAI1HP)
+                                                          0.16      11.55 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1191/O (AOI12HT)
+                                                          0.08      11.63 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U308/O (XOR2HP)
+                                                          0.12      11.75 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U373/O (OAI12HT)
+                                                          0.13      11.88 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U309/O (INV6)
+                                                          0.05      11.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1215/O (INV12)
+                                                          0.08      12.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U746/O (OAI12HP)
+                                                          0.07      12.08 f
+  u_conv/u_post_process/lane[4].u_requant_lane/wdata_fmap[0] (requant_lane_LANE4_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/u_post_process/wdata_fmap_flat[32] (post_process_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/fmap_b_wdata_out_flat[32] (top_conv_layer)       0.00      12.08 f
+  U25434/O (ND2T)                                         0.06      12.14 r
+  U27050/O (ND3P)                                         0.07      12.21 f
+  bufA[4].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)       0.00      12.21 f
+  bufA[4].u_mem/u_mem/DIB0 (FMO180_24642X8)               0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufA[4].u_mem/u_mem/CKB (FMO180_24642X8)                0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_fsm/n_tile_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufB[4].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  post_process_NT_DEPTH126
+                     enG500K               fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE4_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_fsm/n_tile_reg[0]/CK (QDFFRBP)                 0.00 #     0.00 r
+  u_conv/u_fsm/n_tile_reg[0]/Q (QDFFRBP)                  0.30       0.30 f
+  u_conv/u_fsm/n_tile[0] (conv_ctrl_fsm)                  0.00       0.30 f
+  u_conv/u_post_process/n_tile[0] (post_process_NT_DEPTH126)
+                                                          0.00       0.30 f
+  u_conv/u_post_process/U96/O (BUF12CK)                   0.15       0.45 f
+  u_conv/u_post_process/U117/O (BUF6)                     0.17       0.62 f
+  u_conv/u_post_process/lane[4].u_requant_lane/n_tile[0] (requant_lane_LANE4_NT_DEPTH126)
+                                                          0.00       0.62 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1559/O (INV2)
+                                                          0.08       0.70 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1168/O (NR2P)
+                                                          0.07       0.77 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1166/O (OAI12HS)
+                                                          0.09       0.86 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U438/O (OAI12H)
+                                                          0.07       0.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U589/CO (FA1)
+                                                          0.25       1.18 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1152/O (INV2)
+                                                          0.07       1.25 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1711/O (MOAI1H)
+                                                          0.07       1.32 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U437/O (ND2T)
+                                                          0.07       1.39 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U436/O (OAI12H)
+                                                          0.06       1.45 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1783/CO (FA1)
+                                                          0.26       1.71 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U522/O (XNR2HP)
+                                                          0.13       1.83 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1652/O (NR2T)
+                                                          0.16       1.99 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1328/O (INV2)
+                                                          0.05       2.04 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1972/O (OR2)
+                                                          0.26       2.30 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1973/O (OR2)
+                                                          0.26       2.56 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U2006/O (AN4B1S)
+                                                          0.22       2.78 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1083/O (AN2)
+                                                          0.15       2.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U571/O (ND3)
+                                                          0.10       3.03 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U177/O (INV1S)
+                                                          0.08       3.11 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U567/O (ND3)
+                                                          0.11       3.22 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1776/C (HA1P)
+                                                          0.15       3.37 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1055/O (NR2P)
+                                                          0.06       3.43 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1043/O (MOAI1H)
+                                                          0.16       3.59 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U385/O (OAI12HP)
+                                                          0.07       3.66 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U171/O (OAI12HP)
+                                                          0.08       3.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U364/O (AOI12HT)
+                                                          0.07       3.80 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U386/O (MOAI1HT)
+                                                          0.11       3.91 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U388/O (AOI12HT)
+                                                          0.06       3.97 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U423/O (MOAI1HT)
+                                                          0.10       4.07 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U381/O (AOI12HT)
+                                                          0.07       4.14 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U384/O (MOAI1HT)
+                                                          0.10       4.24 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U297/O (MAOI1HT)
+                                                          0.06       4.31 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U389/O (MOAI1HT)
+                                                          0.11       4.41 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U361/O (INV4)
+                                                          0.03       4.45 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U241/O (MOAI1HP)
+                                                          0.10       4.54 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U240/O (OAI12HP)
+                                                          0.07       4.61 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U318/O (OAI12HT)
+                                                          0.07       4.69 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U392/O (ND2F)
+                                                          0.05       4.74 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U382/O (OAI12HT)
+                                                          0.06       4.80 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U433/O (AOI12HT)
+                                                          0.08       4.87 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U226/O (MOAI1HT)
+                                                          0.11       4.98 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U225/O (ND3HT)
+                                                          0.07       5.05 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U497/O (OAI12HP)
+                                                          0.06       5.12 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U499/O (ND2F)
+                                                          0.04       5.16 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U256/O (OAI112HP)
+                                                          0.07       5.23 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U354/O (OAI12HP)
+                                                          0.08       5.30 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U284/O (OAI12HT)
+                                                          0.07       5.38 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U332/O (ND3HT)
+                                                          0.07       5.44 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U331/O (ND2T)
+                                                          0.08       5.52 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U300/O (INV4CK)
+                                                          0.04       5.57 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U108/O (OAI22HP)
+                                                          0.10       5.67 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U353/O (INV4)
+                                                          0.04       5.71 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U255/O (MOAI1HP)
+                                                          0.11       5.82 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U533/O (AOI12HP)
+                                                          0.08       5.90 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U894/O (MOAI1HP)
+                                                          0.12       6.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U319/O (AOI22HP)
+                                                          0.06       6.07 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1196/O (OA12P)
+                                                          0.20       6.26 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U254/O (MOAI1HP)
+                                                          0.11       6.37 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1211/O (OAI12H)
+                                                          0.07       6.44 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1210/O (OAI12H)
+                                                          0.07       6.51 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U78/CO (FA1)
+                                                          0.22       6.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1212/O (XNR2HP)
+                                                          0.16       6.88 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U292/O (INV12)
+                                                          0.07       6.95 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U431/O (ND2F)
+                                                          0.11       7.06 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U430/O (INV8)
+                                                          0.07       7.13 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U60/O (INV2)
+                                                          0.06       7.20 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U54/O (ND2P)
+                                                          0.05       7.25 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U302/O (ND2T)
+                                                          0.05       7.30 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U303/O (OAI12H)
+                                                          0.06       7.36 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1766/S (FA1)
+                                                          0.18       7.54 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U40/CO (FA1S)
+                                                          0.30       7.83 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U448/S (FA1)
+                                                          0.40       8.23 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1610/S (FA1)
+                                                          0.41       8.65 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1205/O (INV1S)
+                                                          0.15       8.80 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U227/O (OAI12HP)
+                                                          0.16       8.96 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U426/O (AOI22HT)
+                                                          0.06       9.01 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U233/O (MOAI1HP)
+                                                          0.13       9.14 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U232/O (AOI12HT)
+                                                          0.06       9.21 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U310/O (MOAI1HP)
+                                                          0.12       9.33 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U249/O (ND3HT)
+                                                          0.06       9.39 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1194/O (ND3HT)
+                                                          0.09       9.48 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U501/O (ND3HT)
+                                                          0.07       9.55 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U434/O (OAI112HP)
+                                                          0.17       9.73 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U371/O (AOI12HT)
+                                                          0.07       9.79 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U413/O (MOAI1HP)
+                                                          0.11       9.90 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U245/O (AOI22HP)
+                                                          0.06       9.96 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U244/O (MOAI1HP)
+                                                          0.12      10.08 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U411/O (AOI22HT)
+                                                          0.06      10.14 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U406/O (MOAI1HT)
+                                                          0.13      10.27 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U425/O (AOI12HT)
+                                                          0.07      10.34 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U420/O (MOAI1HT)
+                                                          0.11      10.45 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U365/O (OAI12HT)
+                                                          0.06      10.51 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U409/O (OAI12HT)
+                                                          0.08      10.59 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U496/O (ND2F)
+                                                          0.04      10.63 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U243/O (ND3HT)
+                                                          0.08      10.71 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U242/O (AOI12HP)
+                                                          0.07      10.78 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1188/O (MOAI1HP)
+                                                          0.11      10.89 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U237/O (ND2F)
+                                                          0.05      10.95 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U216/O (OAI12HT)
+                                                          0.06      11.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U379/O (ND2F)
+                                                          0.04      11.05 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U363/O (ND3HT)
+                                                          0.07      11.12 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1216/CO (FA1)
+                                                          0.21      11.33 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1192/O (AOI22HP)
+                                                          0.07      11.40 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U287/O (MOAI1HP)
+                                                          0.16      11.55 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U1191/O (AOI12HT)
+                                                          0.08      11.63 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U308/O (XOR2HP)
+                                                          0.12      11.75 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U373/O (OAI12HT)
+                                                          0.13      11.88 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U309/O (INV6)
+                                                          0.05      11.93 f
+  u_conv/u_post_process/lane[4].u_requant_lane/U1215/O (INV12)
+                                                          0.08      12.01 r
+  u_conv/u_post_process/lane[4].u_requant_lane/U746/O (OAI12HP)
+                                                          0.07      12.08 f
+  u_conv/u_post_process/lane[4].u_requant_lane/wdata_fmap[0] (requant_lane_LANE4_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/u_post_process/wdata_fmap_flat[32] (post_process_NT_DEPTH126)
+                                                          0.00      12.08 f
+  u_conv/fmap_b_wdata_out_flat[32] (top_conv_layer)       0.00      12.08 f
+  U25434/O (ND2T)                                         0.06      12.14 r
+  U27050/O (ND3P)                                         0.07      12.21 f
+  bufB[4].u_mem/wdata[0] (fmap_out_bank_DEPTH24642)       0.00      12.21 f
+  bufB[4].u_mem/u_mem/DIB0 (FMO180_24642X8)               0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufB[4].u_mem/u_mem/CKB (FMO180_24642X8)                0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[21].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufA[21].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE21_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/DOA3 (PSUM180_12352X32)
+                                                          2.98       2.98 f
+  u_conv/u_psum_sram/bank[21].u_mem/rdata[3] (psum_bank_DEPTH12321)
+                                                          0.00       2.98 f
+  u_conv/u_psum_sram/rdata_flat[675] (psum_sram_DEPTH12321)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/psum_rdata_flat[675] (post_process_NT_DEPTH126)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/lane[21].u_requant_lane/psum_rdata[3] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1820/O (AN2T)
+                                                          0.18       3.16 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U585/O (MOAI1H)
+                                                          0.15       3.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U392/O (INV4CK)
+                                                          0.05       3.36 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U537/O (OAI12HP)
+                                                          0.06       3.42 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U346/O (AOI12HT)
+                                                          0.10       3.52 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U345/O (MOAI1HP)
+                                                          0.06       3.58 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U383/O (OAI12HP)
+                                                          0.06       3.64 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U366/O (OAI12HP)
+                                                          0.07       3.71 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U639/O (ND2F)
+                                                          0.06       3.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U595/O (OAI12HP)
+                                                          0.06       3.84 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U461/O (ND2F)
+                                                          0.05       3.89 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U618/O (ND2P)
+                                                          0.04       3.93 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1729/CO (FA1)
+                                                          0.26       4.19 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U698/O (INV3CK)
+                                                          0.07       4.26 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U338/O (MOAI1HP)
+                                                          0.06       4.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U337/O (ND2F)
+                                                          0.07       4.39 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U372/O (OAI12HP)
+                                                          0.07       4.46 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U415/O (XNR2H)
+                                                          0.15       4.62 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U536/O (OAI12HT)
+                                                          0.12       4.74 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U340/O (OAI12HP)
+                                                          0.07       4.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U339/O (INV4)
+                                                          0.04       4.85 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U460/O (MOAI1H)
+                                                          0.04       4.90 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1191/CO (FA1P)
+                                                          0.30       5.20 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U382/O (AOI12HP)
+                                                          0.13       5.33 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U348/O (MOAI1HP)
+                                                          0.07       5.40 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U347/O (AOI12HT)
+                                                          0.12       5.52 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U413/O (MOAI1HT)
+                                                          0.05       5.57 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U508/O (ND2F)
+                                                          0.06       5.64 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U632/O (OAI12HP)
+                                                          0.06       5.70 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U459/O (INV4CK)
+                                                          0.05       5.75 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U370/O (MOAI1HP)
+                                                          0.05       5.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U369/O (ND2F)
+                                                          0.07       5.88 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U447/O (OAI12HT)
+                                                          0.07       5.95 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U436/O (MAOI1HT)
+                                                          0.11       6.06 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U592/O (MOAI1HT)
+                                                          0.06       6.12 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U493/O (OAI12HT)
+                                                          0.06       6.18 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U616/O (OAI12HT)
+                                                          0.07       6.25 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U514/O (ND2F)
+                                                          0.07       6.33 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U477/O (OAI12HP)
+                                                          0.06       6.39 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U403/O (XNR2HS)
+                                                          0.38       6.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1674/O (INV3)
+                                                          0.06       6.83 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U589/O (OAI12HT)
+                                                          0.23       7.06 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U491/O (INV6)
+                                                          0.08       7.13 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U422/O (MOAI1)
+                                                          0.17       7.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1201/CO (FA1S)
+                                                          0.33       7.64 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U3307/CO (FA1S)
+                                                          0.32       7.96 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U3306/S (FA1S)
+                                                          0.43       8.38 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1728/S (FA1)
+                                                          0.43       8.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1484/O (OR2T)
+                                                          0.14       8.95 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U89/O (ND2T)
+                                                          0.07       9.03 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U381/O (OAI12HP)
+                                                          0.06       9.09 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U380/O (OAI12HP)
+                                                          0.06       9.14 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U365/O (OAI12HP)
+                                                          0.07       9.21 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U328/O (INV4)
+                                                          0.05       9.27 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U379/O (MOAI1HP)
+                                                          0.05       9.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U378/O (AOI12HP)
+                                                          0.12       9.44 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U336/O (MOAI1HT)
+                                                          0.06       9.50 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U617/O (AOI12HT)
+                                                          0.10       9.60 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U520/O (MOAI1HT)
+                                                          0.05       9.65 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U342/O (INV3CK)
+                                                          0.05       9.70 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U341/O (OAI22HP)
+                                                          0.06       9.76 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U621/O (ND2F)
+                                                          0.06       9.83 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U367/O (OAI12HP)
+                                                          0.06       9.89 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U323/O (ND2F)
+                                                          0.06       9.95 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U377/O (OAI12HP)
+                                                          0.06      10.01 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U331/O (AOI12HP)
+                                                          0.11      10.12 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U485/O (BUF2)
+                                                          0.13      10.25 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U393/O (OAI12HP)
+                                                          0.06      10.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U502/O (ND2F)
+                                                          0.06      10.38 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U400/O (ND2F)
+                                                          0.05      10.43 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U644/O (XNR2HP)
+                                                          0.10      10.53 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U15/O (INV4CK)
+                                                          0.05      10.58 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1578/O (MOAI1)
+                                                          0.06      10.64 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U539/O (AOI12H)
+                                                          0.13      10.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1576/O (OA12P)
+                                                          0.15      10.92 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U774/O (OR2)
+                                                          0.11      11.03 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U728/O (ND3)
+                                                          0.09      11.13 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U10/O (OA12S)
+                                                          0.18      11.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1208/O (OR2B1S)
+                                                          0.13      11.44 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U6/O (OR2)
+                                                          0.17      11.61 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U335/O (NR2T)
+                                                          0.08      11.69 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U389/O (ND3HT)
+                                                          0.08      11.78 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1188/O (OAI12HT)
+                                                          0.13      11.90 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U611/O (INV8)
+                                                          0.05      11.96 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U704/O (INV8CK)
+                                                          0.05      12.01 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U388/O (OAI12HP)
+                                                          0.05      12.06 f
+  u_conv/u_post_process/lane[21].u_requant_lane/wdata_fmap[2] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00      12.06 f
+  u_conv/u_post_process/wdata_fmap_flat[170] (post_process_NT_DEPTH126)
+                                                          0.00      12.06 f
+  u_conv/fmap_b_wdata_out_flat[170] (top_conv_layer)      0.00      12.06 f
+  U27125/O (AOI12HP)                                      0.08      12.14 r
+  U26611/O (OAI12H)                                       0.07      12.21 f
+  bufA[21].u_mem/wdata[2] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufA[21].u_mem/u_mem/DIB2 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufA[21].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+  Startpoint: u_conv/u_psum_sram/bank[21].u_mem/u_mem
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: bufB[21].u_mem/u_mem
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  seq_chain_top      G5K                   fsa0m_a_generic_core_tt1p8v25c
+  top_conv_layer     G5K                   fsa0m_a_generic_core_tt1p8v25c
+  requant_lane_LANE21_NT_DEPTH126
+                     enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/CKA (PSUM180_12352X32)
+                                                          0.00 #     0.00 r
+  u_conv/u_psum_sram/bank[21].u_mem/u_mem/DOA3 (PSUM180_12352X32)
+                                                          2.98       2.98 f
+  u_conv/u_psum_sram/bank[21].u_mem/rdata[3] (psum_bank_DEPTH12321)
+                                                          0.00       2.98 f
+  u_conv/u_psum_sram/rdata_flat[675] (psum_sram_DEPTH12321)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/psum_rdata_flat[675] (post_process_NT_DEPTH126)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/lane[21].u_requant_lane/psum_rdata[3] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00       2.98 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1820/O (AN2T)
+                                                          0.18       3.16 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U585/O (MOAI1H)
+                                                          0.15       3.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U392/O (INV4CK)
+                                                          0.05       3.36 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U537/O (OAI12HP)
+                                                          0.06       3.42 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U346/O (AOI12HT)
+                                                          0.10       3.52 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U345/O (MOAI1HP)
+                                                          0.06       3.58 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U383/O (OAI12HP)
+                                                          0.06       3.64 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U366/O (OAI12HP)
+                                                          0.07       3.71 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U639/O (ND2F)
+                                                          0.06       3.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U595/O (OAI12HP)
+                                                          0.06       3.84 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U461/O (ND2F)
+                                                          0.05       3.89 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U618/O (ND2P)
+                                                          0.04       3.93 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1729/CO (FA1)
+                                                          0.26       4.19 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U698/O (INV3CK)
+                                                          0.07       4.26 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U338/O (MOAI1HP)
+                                                          0.06       4.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U337/O (ND2F)
+                                                          0.07       4.39 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U372/O (OAI12HP)
+                                                          0.07       4.46 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U415/O (XNR2H)
+                                                          0.15       4.62 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U536/O (OAI12HT)
+                                                          0.12       4.74 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U340/O (OAI12HP)
+                                                          0.07       4.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U339/O (INV4)
+                                                          0.04       4.85 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U460/O (MOAI1H)
+                                                          0.04       4.90 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1191/CO (FA1P)
+                                                          0.30       5.20 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U382/O (AOI12HP)
+                                                          0.13       5.33 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U348/O (MOAI1HP)
+                                                          0.07       5.40 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U347/O (AOI12HT)
+                                                          0.12       5.52 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U413/O (MOAI1HT)
+                                                          0.05       5.57 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U508/O (ND2F)
+                                                          0.06       5.64 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U632/O (OAI12HP)
+                                                          0.06       5.70 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U459/O (INV4CK)
+                                                          0.05       5.75 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U370/O (MOAI1HP)
+                                                          0.05       5.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U369/O (ND2F)
+                                                          0.07       5.88 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U447/O (OAI12HT)
+                                                          0.07       5.95 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U436/O (MAOI1HT)
+                                                          0.11       6.06 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U592/O (MOAI1HT)
+                                                          0.06       6.12 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U493/O (OAI12HT)
+                                                          0.06       6.18 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U616/O (OAI12HT)
+                                                          0.07       6.25 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U514/O (ND2F)
+                                                          0.07       6.33 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U477/O (OAI12HP)
+                                                          0.06       6.39 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U403/O (XNR2HS)
+                                                          0.38       6.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1674/O (INV3)
+                                                          0.06       6.83 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U589/O (OAI12HT)
+                                                          0.23       7.06 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U491/O (INV6)
+                                                          0.08       7.13 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U422/O (MOAI1)
+                                                          0.17       7.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1201/CO (FA1S)
+                                                          0.33       7.64 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U3307/CO (FA1S)
+                                                          0.32       7.96 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U3306/S (FA1S)
+                                                          0.43       8.38 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1728/S (FA1)
+                                                          0.43       8.81 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1484/O (OR2T)
+                                                          0.14       8.95 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U89/O (ND2T)
+                                                          0.07       9.03 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U381/O (OAI12HP)
+                                                          0.06       9.09 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U380/O (OAI12HP)
+                                                          0.06       9.14 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U365/O (OAI12HP)
+                                                          0.07       9.21 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U328/O (INV4)
+                                                          0.05       9.27 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U379/O (MOAI1HP)
+                                                          0.05       9.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U378/O (AOI12HP)
+                                                          0.12       9.44 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U336/O (MOAI1HT)
+                                                          0.06       9.50 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U617/O (AOI12HT)
+                                                          0.10       9.60 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U520/O (MOAI1HT)
+                                                          0.05       9.65 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U342/O (INV3CK)
+                                                          0.05       9.70 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U341/O (OAI22HP)
+                                                          0.06       9.76 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U621/O (ND2F)
+                                                          0.06       9.83 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U367/O (OAI12HP)
+                                                          0.06       9.89 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U323/O (ND2F)
+                                                          0.06       9.95 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U377/O (OAI12HP)
+                                                          0.06      10.01 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U331/O (AOI12HP)
+                                                          0.11      10.12 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U485/O (BUF2)
+                                                          0.13      10.25 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U393/O (OAI12HP)
+                                                          0.06      10.32 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U502/O (ND2F)
+                                                          0.06      10.38 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U400/O (ND2F)
+                                                          0.05      10.43 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U644/O (XNR2HP)
+                                                          0.10      10.53 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U15/O (INV4CK)
+                                                          0.05      10.58 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1578/O (MOAI1)
+                                                          0.06      10.64 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U539/O (AOI12H)
+                                                          0.13      10.77 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U1576/O (OA12P)
+                                                          0.15      10.92 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U774/O (OR2)
+                                                          0.11      11.03 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U728/O (ND3)
+                                                          0.09      11.13 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U10/O (OA12S)
+                                                          0.18      11.31 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1208/O (OR2B1S)
+                                                          0.13      11.44 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U6/O (OR2)
+                                                          0.17      11.61 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U335/O (NR2T)
+                                                          0.08      11.69 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U389/O (ND3HT)
+                                                          0.08      11.78 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U1188/O (OAI12HT)
+                                                          0.13      11.90 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U611/O (INV8)
+                                                          0.05      11.96 f
+  u_conv/u_post_process/lane[21].u_requant_lane/U704/O (INV8CK)
+                                                          0.05      12.01 r
+  u_conv/u_post_process/lane[21].u_requant_lane/U388/O (OAI12HP)
+                                                          0.05      12.06 f
+  u_conv/u_post_process/lane[21].u_requant_lane/wdata_fmap[2] (requant_lane_LANE21_NT_DEPTH126)
+                                                          0.00      12.06 f
+  u_conv/u_post_process/wdata_fmap_flat[170] (post_process_NT_DEPTH126)
+                                                          0.00      12.06 f
+  u_conv/fmap_b_wdata_out_flat[170] (top_conv_layer)      0.00      12.06 f
+  U27125/O (AOI12HP)                                      0.08      12.14 r
+  U26611/O (OAI12H)                                       0.07      12.21 f
+  bufB[21].u_mem/wdata[2] (fmap_out_bank_DEPTH24642)      0.00      12.21 f
+  bufB[21].u_mem/u_mem/DIB2 (FMO180_24642X8)              0.00      12.21 f
+  data arrival time                                                 12.21
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.50       9.50
+  bufB[21].u_mem/u_mem/CKB (FMO180_24642X8)               0.00       9.50 r
+  library setup time                                     -0.15       9.35
+  data required time                                                 9.35
+  --------------------------------------------------------------------------
+  data required time                                                 9.35
+  data arrival time                                                -12.21
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -2.86
+
+
+1

@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : pe_array
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 04:18:01 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'pe_array' contains 3 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /usr/cad/PDK/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                       107311
+Number of nets:                        445499
+Number of cells:                       279423
+Number of combinational cells:         221258
+Number of sequential cells:             57141
+Number of macros/black boxes:               0
+Number of buf/inv:                      31904
+Number of references:                    1043
+
+Combinational area:            6413808.288656
+Buf/Inv area:                   208539.775754
+Noncombinational area:         3398610.628307
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               9812418.916963
+Total area:                 undefined
+1

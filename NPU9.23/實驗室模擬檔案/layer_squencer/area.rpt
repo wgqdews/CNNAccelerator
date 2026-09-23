@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 03:59:18 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /usr/cad/PDK/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                          777
+Number of nets:                           684
+Number of cells:                          677
+Number of combinational cells:            524
+Number of sequential cells:               153
+Number of macros/black boxes:               0
+Number of buf/inv:                         74
+Number of references:                      25
+
+Combinational area:               6937.056039
+Buf/Inv area:                      462.470395
+Noncombinational area:            8321.342548
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 15258.398587
+Total area:                 undefined
+1

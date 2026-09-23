@@ -1,0 +1,204 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 03:59:18 2026
+****************************************
+
+Operating Conditions: TCCOM   Library: fsa0m_a_generic_core_tt1p8v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: conv_done (input port clocked by clk)
+  Endpoint: state_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 r
+  conv_done (in)                           0.00       3.00 r
+  U827/O (AN4B1S)                          0.36       3.36 r
+  U828/O (INV1S)                           0.27       3.63 f
+  U829/O (ND3)                             0.20       3.83 r
+  U830/O (AOI13HS)                         0.10       3.93 f
+  U921/O (MOAI1S)                          0.23       4.17 r
+  U924/O (AOI22S)                          0.10       4.26 f
+  U785/O (ND2S)                            0.11       4.37 r
+  state_reg[2]/D (QDFFRBN)                 0.00       4.37 r
+  data arrival time                                   4.37
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  state_reg[2]/CK (QDFFRBN)                0.00      10.00 r
+  library setup time                      -0.10       9.90
+  data required time                                  9.90
+  -----------------------------------------------------------
+  data required time                                  9.90
+  data arrival time                                  -4.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.53
+
+
+  Startpoint: conv_done (input port clocked by clk)
+  Endpoint: conv_idx_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 r
+  conv_done (in)                           0.00       3.00 r
+  U827/O (AN4B1S)                          0.36       3.36 r
+  U828/O (INV1S)                           0.27       3.63 f
+  U1016/O (MOAI1S)                         0.34       3.97 r
+  U1021/O (NR2)                            0.06       4.03 f
+  U1022/O (OAI22S)                         0.16       4.19 r
+  conv_idx_reg[4]/D (QDFFRBN)              0.00       4.19 r
+  data arrival time                                   4.19
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  conv_idx_reg[4]/CK (QDFFRBN)             0.00      10.00 r
+  library setup time                      -0.11       9.89
+  data required time                                  9.89
+  -----------------------------------------------------------
+  data required time                                  9.89
+  data arrival time                                  -4.19
+  -----------------------------------------------------------
+  slack (MET)                                         5.70
+
+
+  Startpoint: conv_done (input port clocked by clk)
+  Endpoint: state_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 r
+  conv_done (in)                           0.00       3.00 r
+  U827/O (AN4B1S)                          0.36       3.36 r
+  U828/O (INV1S)                           0.27       3.63 f
+  U829/O (ND3)                             0.20       3.83 r
+  U830/O (AOI13HS)                         0.10       3.93 f
+  U832/O (MOAI1S)                          0.24       4.17 r
+  state_reg[0]/D (QDFFRBN)                 0.00       4.17 r
+  data arrival time                                   4.17
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  state_reg[0]/CK (QDFFRBN)                0.00      10.00 r
+  library setup time                      -0.11       9.89
+  data required time                                  9.89
+  -----------------------------------------------------------
+  data required time                                  9.89
+  data arrival time                                  -4.17
+  -----------------------------------------------------------
+  slack (MET)                                         5.72
+
+
+  Startpoint: conv_done (input port clocked by clk)
+  Endpoint: conv_idx_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 r
+  conv_done (in)                           0.00       3.00 r
+  U827/O (AN4B1S)                          0.36       3.36 r
+  U828/O (INV1S)                           0.27       3.63 f
+  U1016/O (MOAI1S)                         0.34       3.97 r
+  U1018/O (AO22)                           0.21       4.18 r
+  conv_idx_reg[3]/D (QDFFRBN)              0.00       4.18 r
+  data arrival time                                   4.18
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  conv_idx_reg[3]/CK (QDFFRBN)             0.00      10.00 r
+  library setup time                      -0.10       9.90
+  data required time                                  9.90
+  -----------------------------------------------------------
+  data required time                                  9.90
+  data arrival time                                  -4.18
+  -----------------------------------------------------------
+  slack (MET)                                         5.72
+
+
+  Startpoint: start (input port clocked by clk)
+  Endpoint: stage_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                     enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  start (in)                               0.00       3.00 f
+  U780/O (ND2S)                            0.15       3.15 r
+  U816/O (INV1S)                           0.11       3.27 f
+  U817/O (AOI13HS)                         0.26       3.53 r
+  U818/O (INV1S)                           0.12       3.65 f
+  U784/O (ND2S)                            0.21       3.86 r
+  U1000/O (INV1S)                          0.07       3.92 f
+  U782/O (ND2S)                            0.10       4.02 r
+  U1002/O (MOAI1S)                         0.11       4.13 f
+  stage_reg[3]/D (QDFFRBN)                 0.00       4.13 f
+  data arrival time                                   4.13
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  stage_reg[3]/CK (QDFFRBN)                0.00      10.00 r
+  library setup time                      -0.08       9.92
+  data required time                                  9.92
+  -----------------------------------------------------------
+  data required time                                  9.92
+  data arrival time                                  -4.13
+  -----------------------------------------------------------
+  slack (MET)                                         5.79
+
+
+1

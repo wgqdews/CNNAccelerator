@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : gap_lane
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 04:04:50 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /usr/cad/PDK/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/synopsys/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                          218
+Number of nets:                          7276
+Number of cells:                         6853
+Number of combinational cells:           6820
+Number of sequential cells:                33
+Number of macros/black boxes:               0
+Number of buf/inv:                       1252
+Number of references:                     124
+
+Combinational area:             213286.349024
+Buf/Inv area:                    13352.270374
+Noncombinational area:            2040.494389
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                215326.843413
+Total area:                 undefined
+1

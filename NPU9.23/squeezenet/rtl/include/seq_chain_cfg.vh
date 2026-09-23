@@ -1,0 +1,11 @@
+`ifndef SEQ_CHAIN_CFG_VH
+`define SEQ_CHAIN_CFG_VH
+
+`define SEQ_CHAIN_H_OUT 1
+`define SEQ_CHAIN_W_OUT 1
+`define SEQ_CHAIN_COUT 1000
+`define SEQ_CHAIN_N_TILES 32
+`define SEQ_CHAIN_NUM_CONV_LAYERS 26
+`define SEQ_CHAIN_FINAL_BUF 0
+
+`endif

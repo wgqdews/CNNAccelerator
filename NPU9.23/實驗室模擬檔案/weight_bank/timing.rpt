@@ -1,0 +1,205 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : weight_bank
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 03:59:17 2026
+****************************************
+
+Operating Conditions: TCCOM   Library: fsa0m_a_generic_core_tt1p8v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: waddr[11] (input port clocked by clk)
+  Endpoint: u_mem_lo (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  weight_bank        enG500K               fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  waddr[11] (in)                           0.00       3.00 f
+  U87/O (ND3)                              0.47       3.47 r
+  U51/O (ND3)                              0.28       3.75 f
+  U59/O (ND2S)                             0.37       4.12 r
+  U58/O (ND2S)                             0.25       4.37 f
+  U91/O (NR3H)                             0.75       5.12 r
+  U52/O (INV1S)                            0.89       6.01 f
+  U61/O (ND2S)                             0.70       6.70 r
+  U64/O (MOAI1)                            0.35       7.05 r
+  u_mem_lo/B10 (SJMA180_19968X8X1BM8)      0.00       7.05 r
+  data arrival time                                   7.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u_mem_lo/CKB (SJMA180_19968X8X1BM8)      0.00      10.00 r
+  library setup time                      -0.79       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -7.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.15
+
+
+  Startpoint: waddr[11] (input port clocked by clk)
+  Endpoint: u_mem_lo (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  weight_bank        enG500K               fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  waddr[11] (in)                           0.00       3.00 f
+  U87/O (ND3)                              0.47       3.47 r
+  U51/O (ND3)                              0.28       3.75 f
+  U59/O (ND2S)                             0.37       4.12 r
+  U58/O (ND2S)                             0.25       4.37 f
+  U91/O (NR3H)                             0.75       5.12 r
+  U52/O (INV1S)                            0.89       6.01 f
+  U60/O (ND2S)                             0.70       6.70 r
+  U67/O (MOAI1)                            0.35       7.05 r
+  u_mem_lo/B12 (SJMA180_19968X8X1BM8)      0.00       7.05 r
+  data arrival time                                   7.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u_mem_lo/CKB (SJMA180_19968X8X1BM8)      0.00      10.00 r
+  library setup time                      -0.79       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -7.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.15
+
+
+  Startpoint: waddr[11] (input port clocked by clk)
+  Endpoint: u_mem_hi (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  weight_bank        enG500K               fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  waddr[11] (in)                           0.00       3.00 f
+  U87/O (ND3)                              0.47       3.47 r
+  U51/O (ND3)                              0.28       3.75 f
+  U59/O (ND2S)                             0.37       4.12 r
+  U58/O (ND2S)                             0.25       4.37 f
+  U91/O (NR3H)                             0.75       5.12 r
+  U52/O (INV1S)                            0.89       6.01 f
+  U61/O (ND2S)                             0.70       6.70 r
+  U64/O (MOAI1)                            0.35       7.05 r
+  u_mem_hi/B10 (SJMA180_19968X8X1BM8)      0.00       7.05 r
+  data arrival time                                   7.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u_mem_hi/CKB (SJMA180_19968X8X1BM8)      0.00      10.00 r
+  library setup time                      -0.79       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -7.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.15
+
+
+  Startpoint: waddr[11] (input port clocked by clk)
+  Endpoint: u_mem_hi (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  weight_bank        enG500K               fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  waddr[11] (in)                           0.00       3.00 f
+  U87/O (ND3)                              0.47       3.47 r
+  U51/O (ND3)                              0.28       3.75 f
+  U59/O (ND2S)                             0.37       4.12 r
+  U58/O (ND2S)                             0.25       4.37 f
+  U91/O (NR3H)                             0.75       5.12 r
+  U52/O (INV1S)                            0.89       6.01 f
+  U60/O (ND2S)                             0.70       6.70 r
+  U67/O (MOAI1)                            0.35       7.05 r
+  u_mem_hi/B12 (SJMA180_19968X8X1BM8)      0.00       7.05 r
+  data arrival time                                   7.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u_mem_hi/CKB (SJMA180_19968X8X1BM8)      0.00      10.00 r
+  library setup time                      -0.79       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -7.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.15
+
+
+  Startpoint: waddr[11] (input port clocked by clk)
+  Endpoint: u_mem_hi (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  weight_bank        enG500K               fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  waddr[11] (in)                           0.00       3.00 f
+  U87/O (ND3)                              0.47       3.47 r
+  U51/O (ND3)                              0.28       3.75 f
+  U59/O (ND2S)                             0.37       4.12 r
+  U58/O (ND2S)                             0.25       4.37 f
+  U91/O (NR3H)                             0.75       5.12 r
+  U52/O (INV1S)                            0.89       6.01 f
+  U78/O (ND3)                              0.61       6.61 r
+  U66/O (MOAI1)                            0.35       6.96 r
+  u_mem_hi/B11 (SJMA180_19968X8X1BM8)      0.00       6.96 r
+  data arrival time                                   6.96
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u_mem_hi/CKB (SJMA180_19968X8X1BM8)      0.00      10.00 r
+  library setup time                      -0.79       9.21
+  data required time                                  9.21
+  -----------------------------------------------------------
+  data required time                                  9.21
+  data arrival time                                  -6.96
+  -----------------------------------------------------------
+  slack (MET)                                         2.24
+
+
+1

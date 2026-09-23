@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : pe_array
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 04:18:15 2026
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   n184                         1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U110/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U111/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U112/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U113/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U114/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U173/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U189/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U192/I2          1.97           2.12          -0.15  (VIOLATED)
+       PIN :   U117/O           1.97           2.12          -0.15  (VIOLATED)
+   n187                         1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U107/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U108/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U109/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U228/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U229/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U232/I2          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U234/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U236/I1          1.97           2.04          -0.07  (VIOLATED)
+       PIN :   U276/O           1.97           2.04          -0.07  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      2                  -0.22  
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   n184                         0.40           0.44          -0.03  (VIOLATED)
+   n187                         0.40           0.42          -0.02  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      2                  -0.05  
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   pe_array                     0.00       38607332.00    -38607332.00
+                                                                    (VIOLATED)
+
+
+1

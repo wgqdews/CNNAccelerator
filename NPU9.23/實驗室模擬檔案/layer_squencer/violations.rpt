@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 03:59:18 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   layer_sequencer_N_STAGES30_N_CONV_STAGES26_N_POOL_STAGES3_N_GAP_STAGES1
+                                0.00       67070.41       -67070.41 (VIOLATED)
+
+
+1

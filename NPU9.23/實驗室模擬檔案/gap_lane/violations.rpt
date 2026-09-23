@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : gap_lane
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 04:04:50 2026
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   gap_lane                     0.00       887678.62      -887678.62
+                                                                    (VIOLATED)
+
+
+1

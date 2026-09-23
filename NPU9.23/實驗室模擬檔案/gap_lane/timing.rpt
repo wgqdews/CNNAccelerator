@@ -1,0 +1,355 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : gap_lane
+Version: S-2021.06-SP2
+Date   : Wed Sep 23 04:04:50 2026
+****************************************
+
+Operating Conditions: TCCOM   Library: fsa0m_a_generic_core_tt1p8v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: cfg_mult[26]
+              (input port clocked by clk)
+  Endpoint: wdata_out[4]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  gap_lane           enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  cfg_mult[26] (in)                        0.00       3.00 f
+  U1529/O (XNR2HS)                         0.09       3.09 f
+  U6628/O (OAI22S)                         0.26       3.35 r
+  U4340/O (MAO222)                         0.22       3.57 r
+  U1322/O (INV1S)                          0.10       3.67 f
+  U1986/O (MOAI1H)                         0.13       3.80 r
+  U2414/O (OAI12H)                         0.06       3.87 f
+  U1208/O (OAI12HS)                        0.08       3.95 r
+  U6332/CO (FA1)                           0.30       4.25 r
+  U5716/O (XNR2HP)                         0.13       4.38 r
+  U6271/O (XNR2HP)                         0.12       4.50 r
+  U4633/O (NR2F)                           0.07       4.57 f
+  U2797/O (NR2F)                           0.11       4.67 r
+  U4372/O (ND2F)                           0.06       4.73 f
+  U3327/O (NR2F)                           0.11       4.84 r
+  U3326/O (ND2F)                           0.07       4.91 f
+  U2700/O (INV4CK)                         0.05       4.96 r
+  U3951/O (ND2F)                           0.06       5.01 f
+  U6634/O (INV12)                          0.10       5.11 r
+  U2623/O (INV2)                           0.07       5.18 f
+  U3043/O (OAI12HT)                        0.13       5.30 r
+  U3258/O (XNR2HT)                         0.12       5.42 r
+  U3259/O (MAOI1HP)                        0.14       5.56 r
+  U2676/O (ND3HT)                          0.09       5.66 f
+  U887/O (BUF2)                            0.15       5.81 f
+  U2699/O (ND2T)                           0.06       5.87 r
+  U4328/O (ND3HT)                          0.09       5.96 f
+  U3090/O (ND2P)                           0.09       6.05 r
+  U4174/O (ND3HT)                          0.10       6.15 f
+  U2713/O (ND2T)                           0.07       6.21 r
+  U676/O (NR3HP)                           0.07       6.28 f
+  U2572/O (ND3HT)                          0.14       6.42 r
+  U2998/O (XOR2H)                          0.11       6.53 r
+  U4680/O (ND3HT)                          0.08       6.61 f
+  U5355/O (NR3HT)                          0.10       6.71 r
+  U2938/O (ND3HT)                          0.07       6.78 f
+  U3147/O (OAI12HT)                        0.17       6.95 r
+  U3599/O (ND2)                            0.05       7.00 f
+  wdata_out[4] (out)                       0.00       7.00 f
+  data arrival time                                   7.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -7.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cfg_mult[26]
+              (input port clocked by clk)
+  Endpoint: wdata_out[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  gap_lane           enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  cfg_mult[26] (in)                        0.00       3.00 f
+  U1529/O (XNR2HS)                         0.09       3.09 f
+  U6628/O (OAI22S)                         0.26       3.35 r
+  U4340/O (MAO222)                         0.22       3.57 r
+  U1322/O (INV1S)                          0.10       3.67 f
+  U1986/O (MOAI1H)                         0.13       3.80 r
+  U2414/O (OAI12H)                         0.06       3.87 f
+  U1208/O (OAI12HS)                        0.08       3.95 r
+  U6332/CO (FA1)                           0.30       4.25 r
+  U5716/O (XNR2HP)                         0.13       4.38 r
+  U6271/O (XNR2HP)                         0.12       4.50 r
+  U4633/O (NR2F)                           0.07       4.57 f
+  U2797/O (NR2F)                           0.11       4.67 r
+  U4372/O (ND2F)                           0.06       4.73 f
+  U3327/O (NR2F)                           0.11       4.84 r
+  U3326/O (ND2F)                           0.07       4.91 f
+  U2700/O (INV4CK)                         0.05       4.96 r
+  U3951/O (ND2F)                           0.06       5.01 f
+  U6634/O (INV12)                          0.10       5.11 r
+  U2623/O (INV2)                           0.07       5.18 f
+  U3043/O (OAI12HT)                        0.13       5.30 r
+  U3258/O (XNR2HT)                         0.12       5.42 r
+  U3259/O (MAOI1HP)                        0.14       5.56 r
+  U2676/O (ND3HT)                          0.09       5.66 f
+  U887/O (BUF2)                            0.15       5.81 f
+  U2699/O (ND2T)                           0.06       5.87 r
+  U4328/O (ND3HT)                          0.09       5.96 f
+  U3090/O (ND2P)                           0.09       6.05 r
+  U4174/O (ND3HT)                          0.10       6.15 f
+  U2713/O (ND2T)                           0.07       6.21 r
+  U676/O (NR3HP)                           0.07       6.28 f
+  U2572/O (ND3HT)                          0.14       6.42 r
+  U2998/O (XOR2H)                          0.11       6.53 r
+  U4680/O (ND3HT)                          0.08       6.61 f
+  U5355/O (NR3HT)                          0.10       6.71 r
+  U2938/O (ND3HT)                          0.07       6.78 f
+  U3147/O (OAI12HT)                        0.17       6.95 r
+  U3598/O (ND2)                            0.05       7.00 f
+  wdata_out[3] (out)                       0.00       7.00 f
+  data arrival time                                   7.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -7.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cfg_mult[26]
+              (input port clocked by clk)
+  Endpoint: wdata_out[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  gap_lane           enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  cfg_mult[26] (in)                        0.00       3.00 f
+  U1529/O (XNR2HS)                         0.09       3.09 f
+  U6628/O (OAI22S)                         0.26       3.35 r
+  U4340/O (MAO222)                         0.22       3.57 r
+  U1322/O (INV1S)                          0.10       3.67 f
+  U1986/O (MOAI1H)                         0.13       3.80 r
+  U2414/O (OAI12H)                         0.06       3.87 f
+  U1208/O (OAI12HS)                        0.08       3.95 r
+  U6332/CO (FA1)                           0.30       4.25 r
+  U5716/O (XNR2HP)                         0.13       4.38 r
+  U6271/O (XNR2HP)                         0.12       4.50 r
+  U4633/O (NR2F)                           0.07       4.57 f
+  U2797/O (NR2F)                           0.11       4.67 r
+  U4372/O (ND2F)                           0.06       4.73 f
+  U3327/O (NR2F)                           0.11       4.84 r
+  U3326/O (ND2F)                           0.07       4.91 f
+  U2700/O (INV4CK)                         0.05       4.96 r
+  U3951/O (ND2F)                           0.06       5.01 f
+  U6634/O (INV12)                          0.10       5.11 r
+  U2623/O (INV2)                           0.07       5.18 f
+  U3043/O (OAI12HT)                        0.13       5.30 r
+  U3258/O (XNR2HT)                         0.12       5.42 r
+  U3259/O (MAOI1HP)                        0.14       5.56 r
+  U2676/O (ND3HT)                          0.09       5.66 f
+  U887/O (BUF2)                            0.15       5.81 f
+  U2699/O (ND2T)                           0.06       5.87 r
+  U4328/O (ND3HT)                          0.09       5.96 f
+  U3090/O (ND2P)                           0.09       6.05 r
+  U4174/O (ND3HT)                          0.10       6.15 f
+  U2713/O (ND2T)                           0.07       6.21 r
+  U676/O (NR3HP)                           0.07       6.28 f
+  U2572/O (ND3HT)                          0.14       6.42 r
+  U2998/O (XOR2H)                          0.11       6.53 r
+  U4680/O (ND3HT)                          0.08       6.61 f
+  U5355/O (NR3HT)                          0.10       6.71 r
+  U2938/O (ND3HT)                          0.07       6.78 f
+  U3147/O (OAI12HT)                        0.17       6.95 r
+  U3597/O (ND2)                            0.05       7.00 f
+  wdata_out[2] (out)                       0.00       7.00 f
+  data arrival time                                   7.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -7.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cfg_mult[26]
+              (input port clocked by clk)
+  Endpoint: wdata_out[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  gap_lane           enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  cfg_mult[26] (in)                        0.00       3.00 f
+  U1529/O (XNR2HS)                         0.09       3.09 f
+  U6628/O (OAI22S)                         0.26       3.35 r
+  U4340/O (MAO222)                         0.22       3.57 r
+  U1322/O (INV1S)                          0.10       3.67 f
+  U1986/O (MOAI1H)                         0.13       3.80 r
+  U2414/O (OAI12H)                         0.06       3.87 f
+  U1208/O (OAI12HS)                        0.08       3.95 r
+  U6332/CO (FA1)                           0.30       4.25 r
+  U5716/O (XNR2HP)                         0.13       4.38 r
+  U6271/O (XNR2HP)                         0.12       4.50 r
+  U4633/O (NR2F)                           0.07       4.57 f
+  U2797/O (NR2F)                           0.11       4.67 r
+  U4372/O (ND2F)                           0.06       4.73 f
+  U3327/O (NR2F)                           0.11       4.84 r
+  U3326/O (ND2F)                           0.07       4.91 f
+  U2700/O (INV4CK)                         0.05       4.96 r
+  U3951/O (ND2F)                           0.06       5.01 f
+  U6634/O (INV12)                          0.10       5.11 r
+  U2623/O (INV2)                           0.07       5.18 f
+  U3043/O (OAI12HT)                        0.13       5.30 r
+  U3258/O (XNR2HT)                         0.12       5.42 r
+  U3259/O (MAOI1HP)                        0.14       5.56 r
+  U2676/O (ND3HT)                          0.09       5.66 f
+  U887/O (BUF2)                            0.15       5.81 f
+  U2699/O (ND2T)                           0.06       5.87 r
+  U4328/O (ND3HT)                          0.09       5.96 f
+  U3090/O (ND2P)                           0.09       6.05 r
+  U4174/O (ND3HT)                          0.10       6.15 f
+  U2713/O (ND2T)                           0.07       6.21 r
+  U676/O (NR3HP)                           0.07       6.28 f
+  U2572/O (ND3HT)                          0.14       6.42 r
+  U2998/O (XOR2H)                          0.11       6.53 r
+  U4680/O (ND3HT)                          0.08       6.61 f
+  U5355/O (NR3HT)                          0.10       6.71 r
+  U2938/O (ND3HT)                          0.07       6.78 f
+  U3147/O (OAI12HT)                        0.17       6.95 r
+  U3603/O (ND2)                            0.05       7.00 f
+  wdata_out[1] (out)                       0.00       7.00 f
+  data arrival time                                   7.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -7.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cfg_mult[26]
+              (input port clocked by clk)
+  Endpoint: wdata_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  gap_lane           enG30K                fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     3.00       3.00 f
+  cfg_mult[26] (in)                        0.00       3.00 f
+  U1529/O (XNR2HS)                         0.09       3.09 f
+  U6628/O (OAI22S)                         0.26       3.35 r
+  U4340/O (MAO222)                         0.22       3.57 r
+  U1322/O (INV1S)                          0.10       3.67 f
+  U1986/O (MOAI1H)                         0.13       3.80 r
+  U2414/O (OAI12H)                         0.06       3.87 f
+  U1208/O (OAI12HS)                        0.08       3.95 r
+  U6332/CO (FA1)                           0.30       4.25 r
+  U5716/O (XNR2HP)                         0.13       4.38 r
+  U6271/O (XNR2HP)                         0.12       4.50 r
+  U4633/O (NR2F)                           0.07       4.57 f
+  U2797/O (NR2F)                           0.11       4.67 r
+  U4372/O (ND2F)                           0.06       4.73 f
+  U3327/O (NR2F)                           0.11       4.84 r
+  U3326/O (ND2F)                           0.07       4.91 f
+  U2700/O (INV4CK)                         0.05       4.96 r
+  U3951/O (ND2F)                           0.06       5.01 f
+  U6634/O (INV12)                          0.10       5.11 r
+  U2623/O (INV2)                           0.07       5.18 f
+  U3043/O (OAI12HT)                        0.13       5.30 r
+  U3258/O (XNR2HT)                         0.12       5.42 r
+  U3259/O (MAOI1HP)                        0.14       5.56 r
+  U2676/O (ND3HT)                          0.09       5.66 f
+  U887/O (BUF2)                            0.15       5.81 f
+  U2699/O (ND2T)                           0.06       5.87 r
+  U4328/O (ND3HT)                          0.09       5.96 f
+  U3090/O (ND2P)                           0.09       6.05 r
+  U4174/O (ND3HT)                          0.10       6.15 f
+  U2713/O (ND2T)                           0.07       6.21 r
+  U676/O (NR3HP)                           0.07       6.28 f
+  U2572/O (ND3HT)                          0.14       6.42 r
+  U2998/O (XOR2H)                          0.11       6.53 r
+  U4680/O (ND3HT)                          0.08       6.61 f
+  U5355/O (NR3HT)                          0.10       6.71 r
+  U2938/O (ND3HT)                          0.07       6.78 f
+  U3147/O (OAI12HT)                        0.17       6.95 r
+  U3516/O (ND2)                            0.05       7.00 f
+  wdata_out[0] (out)                       0.00       7.00 f
+  data arrival time                                   7.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  output external delay                   -3.00       7.00
+  data required time                                  7.00
+  -----------------------------------------------------------
+  data required time                                  7.00
+  data arrival time                                  -7.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
